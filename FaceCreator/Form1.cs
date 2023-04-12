@@ -17,10 +17,8 @@ namespace FaceCreator
     public partial class Form1 : Form
     {
         List<PartFace> face = new List<PartFace>();
-        PartFace curent = null;
-        //PartFace partFace;
+        PartFace current = null;
         bool move = false;
-        int current_index;
         public Form1()
         {
             InitializeComponent();
@@ -30,16 +28,23 @@ namespace FaceCreator
         {
             foreach (PartFace face in face)
             {
-                face.show(current_index);
+                face.show();
+            }
+        }
+
+        void ValidateMarker()
+        {
+            for (int i = 0; i < face.Count; i++)
+            {
+                if (!face[i].marker)
+                {
+                    face.Remove(face[i]);
+                }
             }
         }
 
         private void clearToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < face.Count; i++)
-            {
-                face[i] = null;
-            }
             face.Clear();
             PartFace.Canvas.Clear(Color.White);
         }
@@ -55,10 +60,10 @@ namespace FaceCreator
 
             for (int i = 0; i < face.Count; i++)
             {
-                curent = face[i];
-                if (e.X > curent.x && e.Y > curent.y && e.X < curent.x + curent.w && e.Y < curent.y + curent.h)
+                current = face[i];
+                if (e.X > current.x && e.Y > current.y && e.X < current.x + current.w && e.Y < current.y + current.h)
                 {
-                    curent = face[i];
+                    current = face[i];
                     Text = i.ToString();
                     move = true;
                     break;
@@ -75,50 +80,55 @@ namespace FaceCreator
         {
             if(move)
             {
-                curent.move(e.X, e.Y);
+                current.move(e.X, e.Y);
                 show_all();
             }
         }
         private void BtBeard_Click(object sender, EventArgs e)
         {
-            int x = ((Button)sender).Left*2;
+            ValidateMarker();
+            int x = ((Button)sender).Left+900;
             int y = ((Button)sender).Top;
             PartFace partFace = new Beard(x, y);
             partFace.currentForm = this;
             partFace.ClearComponents();
             partFace.SetImages("beard_");
             partFace.ButtonsSummon(13);
-            current_index = partFace.current_index;
             face.Add(partFace);
+
         }
         private void BtEyebrows_Click(object sender, EventArgs e)
         {
-            int x = ((Button)sender).Left;
+            ValidateMarker();
+            int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
             PartFace partFace = new Eyebrows(x, y);
             partFace.currentForm = this;
             partFace.ClearComponents();
             partFace.SetImages("eyebrows_");
             partFace.ButtonsSummon(15);
+
             face.Add(partFace);
         }
 
         private void BtEyes_Click(object sender, EventArgs e)
         {
-            int x = ((Button)sender).Left;
+            ValidateMarker();
+            int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
             PartFace partFace = new Eyes(x, y);
             partFace.currentForm = this;
             partFace.ClearComponents();
             partFace.SetImages("eyes_");
             partFace.ButtonsSummon(15);
-            current_index = partFace.current_index;
             face.Add(partFace);
+
         }
 
         private void BtFace_shape_Click(object sender, EventArgs e)
         {
-            int x = ((Button)sender).Left;
+            ValidateMarker();
+            int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
             PartFace partFace = new Face_shape(x, y);
             partFace.currentForm = this;
@@ -130,7 +140,8 @@ namespace FaceCreator
 
         private void BtForehead_Click(object sender, EventArgs e)
         {
-            int x = ((Button)sender).Left;
+            ValidateMarker();
+            int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
             PartFace partFace = new Forehead(x, y);
             partFace.currentForm = this;
@@ -142,7 +153,8 @@ namespace FaceCreator
 
         private void BtGlasses_Click(object sender, EventArgs e)
         {
-            int x = ((Button)sender).Left;
+            ValidateMarker();
+            int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
             PartFace partFace = new Glasses(x, y);
             partFace.currentForm = this;
@@ -154,7 +166,8 @@ namespace FaceCreator
 
         private void BtHair_Click(object sender, EventArgs e)
         {
-            int x = ((Button)sender).Left;
+            ValidateMarker();
+            int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
             PartFace partFace = new Hair(x, y);
             partFace.currentForm = this;
@@ -166,7 +179,8 @@ namespace FaceCreator
 
         private void BtHeaddress_Click(object sender, EventArgs e)
         {
-            int x = ((Button)sender).Left;
+            ValidateMarker();
+            int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
             PartFace partFace = new Headdress(x, y);
             partFace.currentForm = this;
@@ -178,7 +192,8 @@ namespace FaceCreator
 
         private void BtLips_Click(object sender, EventArgs e)
         {
-            int x = ((Button)sender).Left;
+            ValidateMarker();
+            int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
             PartFace partFace = new Lips(x, y);
             partFace.currentForm = this;
@@ -190,7 +205,8 @@ namespace FaceCreator
 
         private void BtMustache_Click(object sender, EventArgs e)
         {
-            int x = ((Button)sender).Left;
+            ValidateMarker();
+            int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
             PartFace partFace = new Mustache(x, y);
             partFace.currentForm = this;
@@ -202,7 +218,8 @@ namespace FaceCreator
 
         private void BtNose_Click(object sender, EventArgs e)
         {
-            int x = ((Button)sender).Left;
+            ValidateMarker();
+            int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
             PartFace partFace = new Nose(x, y);
             partFace.currentForm = this;
@@ -214,7 +231,8 @@ namespace FaceCreator
 
         private void BtPiercing_Click(object sender, EventArgs e)
         {
-            int x = ((Button)sender).Left;
+            ValidateMarker();
+            int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
             PartFace partFace = new Piercing(x, y);
             partFace.currentForm = this;
@@ -226,26 +244,31 @@ namespace FaceCreator
 
         private void BtTattoo_Click(object sender, EventArgs e)
         {
-            int x = ((Button)sender).Left;
+            ValidateMarker();
+            int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
             PartFace partFace = new Tattoo(x, y);
             partFace.currentForm = this;
             partFace.ClearComponents();
             partFace.SetImages("tattoo_");
-            partFace.ButtonsSummon(3);
+            partFace.ButtonsSummon(3); 
             face.Add(partFace);
         }
 
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            curent.move(e.KeyCode.ToString());
-
+            if (e.KeyCode == Keys.A || e.KeyCode == Keys.W || e.KeyCode == Keys.S || e.KeyCode == Keys.D && current != null)
+            current.move(e);
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            for(int i = 0; i<this.Controls.Count; i++)
+            {
+                if (Convert.ToInt32(this.Controls[i].Tag)<0)
+                    this.Controls[i].KeyDown += new KeyEventHandler(Form1_KeyDown);
+            }
         }
     }
 }

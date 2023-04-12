@@ -11,10 +11,9 @@ namespace FaceCreator.Classes
       class PartFace
     {
         public static Graphics Canvas;
-        int image_index;
+        public bool marker { get; private set; }
         public int current_index{get;set;}
         public int x, y, h, w;
-        int countImages;
         protected FlyWeightImage images=new FlyWeightImage(15);
         protected Button[] buttontForMenu;
         public Form currentForm { get; set; }
@@ -28,35 +27,31 @@ namespace FaceCreator.Classes
         {
             images.GetBitmapsFromResourceFolder(name);
         }
-        public void show(int image_index)
-        {
-            Canvas.DrawImage(images.getImageBeard(image_index), new Rectangle(x, y, w, h));
-        }
         public void show()
         {
-            Canvas.DrawImage(images.getImageBeard(image_index), new Rectangle(x, y, w, h));
+            Canvas.DrawImage(images.getImageBeard(current_index), new Rectangle(x, y, w, h));
         }
         public void hide()
         {
             Canvas.FillRectangle(Brushes.White, new Rectangle(x, y, w, h)); ;
         }
-        public void move(string dir)
+        public void move(KeyEventArgs dir)
         {
             hide();
-            switch (dir)
+            switch (dir.KeyCode)
             {
-                case "A": x -= 1; break;
-                case "D": x += 1; break;
-                case "W": y -= 1; break;
-                case "S": y += 1; break;
+                case Keys.A: x -= 1; break;
+                case Keys.D: x += 1; break;
+                case Keys.W: y -= 1; break;
+                case Keys.S: y += 1; break;
             }
-            show(current_index);
+            show();
         }
         public void move(int X, int Y)
         {
             hide();
             x = X; y = Y;
-            show(current_index);
+            show();
         }
         public void ButtonsSummon(int _countOfButtons)
         {
@@ -84,9 +79,12 @@ namespace FaceCreator.Classes
         }
         void HandlerImage(object sender, EventArgs e)
         {
+            hide();
+            marker = true;
             current_index = (int)((Button)sender).Tag;
-            show(current_index);
+            show();
         }
+
         public virtual void ClearComponents()
         {
             for (int i = currentForm.Controls.Count - 1; i >= 0; i--)

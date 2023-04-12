@@ -9,7 +9,7 @@ namespace FaceCreator.Classes
 {
     internal class FlyWeightImage
     {
-        List<Bitmap> imageList = new List<Bitmap>();
+        public List<Bitmap> imageList = new List<Bitmap>();
         int countImages;
         public FlyWeightImage() { }
         public FlyWeightImage(int countImages)

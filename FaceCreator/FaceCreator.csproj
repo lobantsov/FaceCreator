@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B448275-C756-407C-AE87-597AB720B9BF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FaceCreator</RootNamespace>
+    <AssemblyName>FaceCreator</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Beard.cs" />
+    <Compile Include="Classes\Eyebrows.cs" />
+    <Compile Include="Classes\Eyes.cs" />
+    <Compile Include="Classes\Face_shape.cs" />
+    <Compile Include="Classes\FlyWeightImage.cs" />
+    <Compile Include="Classes\Forehead.cs" />
+    <Compile Include="Classes\Glasses.cs" />
+    <Compile Include="Classes\Hair.cs" />
+    <Compile Include="Classes\Headdress.cs" />
+    <Compile Include="Classes\Lips.cs" />
+    <Compile Include="Classes\Mustache.cs" />
+    <Compile Include="Classes\Nose.cs" />
+    <Compile Include="Classes\PartFace.cs" />
+    <Compile Include="Classes\Piercing.cs" />
+    <Compile Include="Classes\Tattoo.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerAndCollision.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyebrows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face_shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forehead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glasses.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\headdress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lips.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mustache.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piercing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tattoo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beard_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beard_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beard_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beard_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beard_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beard_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beard_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beard_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beard_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beard_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beard_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beard_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beard_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyebrows_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyebrows_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyebrows_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyebrows_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyebrows_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyebrows_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyebrows_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyebrows_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyebrows_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyebrows_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyebrows_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyebrows_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyebrows_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyebrows_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyebrows_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face_shape_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face_shape_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face_shape_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face_shape_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face_shape_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face_shape_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face_shape_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face_shape_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face_shape_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face_shape_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forehead_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forehead_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forehead_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forehead_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forehead_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forehead_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forehead_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forehead_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forehead_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forehead_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glasses_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glasses_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glasses_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glasses_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glasses_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hair_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hair_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hair_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hair_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hair_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hair_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hair_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hair_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hair_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hair_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hair_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hair_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hair_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hair_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hair_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\headdress_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\headdress_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\headdress_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\headdress_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\headdress_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\headdress_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\headdress_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lips_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lips_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lips_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lips_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lips_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lips_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lips_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lips_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lips_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lips_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mustache_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mustache_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mustache_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mustache_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mustache_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mustache_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mustache_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mustache_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mustache_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mustache_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nose_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nose_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nose_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nose_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nose_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nose_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nose_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nose_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nose_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nose_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piercing_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piercing_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piercing_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tattoo_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tattoo_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tattoo_3.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

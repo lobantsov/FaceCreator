@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="headdress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\headdress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forehead" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forehead.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tattoo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tattoo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mustache" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mustache.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="beard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lips" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lips.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="face_shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\face_shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hair" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="glasses" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\glasses.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="piercing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\piercing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyebrows" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="beard_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beard_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="beard_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beard_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="beard_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beard_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="beard_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beard_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="beard_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beard_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="beard_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beard_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="beard_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beard_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="beard_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beard_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="beard_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beard_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="beard_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beard_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="beard_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beard_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="beard_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beard_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="beard_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beard_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyebrows_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyebrows_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyebrows_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyebrows_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyebrows_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyebrows_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyebrows_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyebrows_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyebrows_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyebrows_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyebrows_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyebrows_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyebrows_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyebrows_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyebrows_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="face_shape_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\face_shape_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="face_shape_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\face_shape_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="face_shape_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\face_shape_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="face_shape_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\face_shape_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="face_shape_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\face_shape_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="face_shape_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\face_shape_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="face_shape_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\face_shape_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="face_shape_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\face_shape_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="face_shape_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\face_shape_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="face_shape_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\face_shape_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forehead_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forehead_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forehead_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forehead_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forehead_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forehead_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forehead_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forehead_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forehead_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forehead_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forehead_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forehead_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forehead_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forehead_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forehead_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forehead_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forehead_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forehead_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forehead_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forehead_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="glasses_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\glasses_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="glasses_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\glasses_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="glasses_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\glasses_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="glasses_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\glasses_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="glasses_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\glasses_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hair_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hair_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hair_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hair_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hair_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hair_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hair_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hair_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hair_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hair_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hair_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hair_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hair_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hair_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hair_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="headdress_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\headdress_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="headdress_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\headdress_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="headdress_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\headdress_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="headdress_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\headdress_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="headdress_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\headdress_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="headdress_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\headdress_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="headdress_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\headdress_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lips_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lips_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lips_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lips_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lips_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lips_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lips_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lips_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lips_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lips_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lips_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lips_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lips_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lips_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lips_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lips_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lips_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lips_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lips_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lips_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mustache_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mustache_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mustache_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mustache_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mustache_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mustache_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mustache_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mustache_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mustache_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mustache_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mustache_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mustache_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mustache_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mustache_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mustache_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mustache_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mustache_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mustache_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mustache_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mustache_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nose_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nose_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nose_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nose_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nose_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nose_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nose_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nose_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nose_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nose_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nose_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nose_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nose_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nose_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nose_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nose_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nose_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nose_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nose_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nose_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="piercing_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\piercing_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="piercing_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\piercing_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="piercing_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\piercing_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tattoo_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tattoo_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tattoo_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tattoo_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tattoo_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tattoo_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

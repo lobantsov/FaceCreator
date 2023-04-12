@@ -20,6 +20,7 @@ namespace FaceCreator
         PartFace curent = null;
         //PartFace partFace;
         bool move = false;
+        int current_index;
         public Form1()
         {
             InitializeComponent();
@@ -29,23 +30,8 @@ namespace FaceCreator
         {
             foreach (PartFace face in face)
             {
-                face.show();
+                face.show(current_index);
             }
-        }
-        private void BtUp_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void BtDown_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void BtRight_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void BtLeft_Click(object sender, EventArgs e)
-        {
         }
 
         private void clearToolStripMenuItem_Click(object sender, EventArgs e)
@@ -102,6 +88,7 @@ namespace FaceCreator
             partFace.ClearComponents();
             partFace.SetImages("beard_");
             partFace.ButtonsSummon(13);
+            current_index = partFace.current_index;
             face.Add(partFace);
         }
         private void BtEyebrows_Click(object sender, EventArgs e)
@@ -125,6 +112,7 @@ namespace FaceCreator
             partFace.ClearComponents();
             partFace.SetImages("eyes_");
             partFace.ButtonsSummon(15);
+            current_index = partFace.current_index;
             face.Add(partFace);
         }
 
@@ -246,6 +234,18 @@ namespace FaceCreator
             partFace.SetImages("tattoo_");
             partFace.ButtonsSummon(3);
             face.Add(partFace);
+        }
+
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            curent.move(e.KeyCode.ToString());
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

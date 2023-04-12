@@ -28,12 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.BtSizePlus = new System.Windows.Forms.Button();
-            this.BtSizeMinus = new System.Windows.Forms.Button();
-            this.BtRight = new System.Windows.Forms.Button();
-            this.BtLeft = new System.Windows.Forms.Button();
-            this.BtDown = new System.Windows.Forms.Button();
-            this.BtUp = new System.Windows.Forms.Button();
             this.optionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -54,75 +48,18 @@
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // BtSizePlus
-            // 
-            this.BtSizePlus.Location = new System.Drawing.Point(752, 716);
-            this.BtSizePlus.Name = "BtSizePlus";
-            this.BtSizePlus.Size = new System.Drawing.Size(32, 23);
-            this.BtSizePlus.TabIndex = 41;
-            this.BtSizePlus.Text = "+";
-            this.BtSizePlus.UseVisualStyleBackColor = true;
-            this.BtSizePlus.Click += new System.EventHandler(this.BtSizePlus_Click);
-            // 
-            // BtSizeMinus
-            // 
-            this.BtSizeMinus.Location = new System.Drawing.Point(873, 718);
-            this.BtSizeMinus.Name = "BtSizeMinus";
-            this.BtSizeMinus.Size = new System.Drawing.Size(32, 23);
-            this.BtSizeMinus.TabIndex = 40;
-            this.BtSizeMinus.Text = "-";
-            this.BtSizeMinus.UseVisualStyleBackColor = true;
-            // 
-            // BtRight
-            // 
-            this.BtRight.Location = new System.Drawing.Point(830, 689);
-            this.BtRight.Name = "BtRight";
-            this.BtRight.Size = new System.Drawing.Size(75, 23);
-            this.BtRight.TabIndex = 39;
-            this.BtRight.Text = ">";
-            this.BtRight.UseVisualStyleBackColor = true;
-            this.BtRight.Click += new System.EventHandler(this.BtLeft_Click);
-            // 
-            // BtLeft
-            // 
-            this.BtLeft.Location = new System.Drawing.Point(752, 689);
-            this.BtLeft.Name = "BtLeft";
-            this.BtLeft.Size = new System.Drawing.Size(75, 23);
-            this.BtLeft.TabIndex = 38;
-            this.BtLeft.Text = "<";
-            this.BtLeft.UseVisualStyleBackColor = true;
-            this.BtLeft.Click += new System.EventHandler(this.BtRight_Click);
-            // 
-            // BtDown
-            // 
-            this.BtDown.Location = new System.Drawing.Point(792, 718);
-            this.BtDown.Name = "BtDown";
-            this.BtDown.Size = new System.Drawing.Size(75, 23);
-            this.BtDown.TabIndex = 37;
-            this.BtDown.Text = "v";
-            this.BtDown.UseVisualStyleBackColor = true;
-            this.BtDown.Click += new System.EventHandler(this.BtDown_Click);
-            // 
-            // BtUp
-            // 
-            this.BtUp.Location = new System.Drawing.Point(792, 660);
-            this.BtUp.Name = "BtUp";
-            this.BtUp.Size = new System.Drawing.Size(75, 23);
-            this.BtUp.TabIndex = 36;
-            this.BtUp.Text = "^";
-            this.BtUp.UseVisualStyleBackColor = true;
-            this.BtUp.Click += new System.EventHandler(this.BtUp_Click);
-            // 
             // optionToolStripMenuItem
             // 
             this.optionToolStripMenuItem.Name = "optionToolStripMenuItem";
             this.optionToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
+            this.optionToolStripMenuItem.Tag = "-1";
             this.optionToolStripMenuItem.Text = "Open";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(54, 24);
+            this.saveToolStripMenuItem.Tag = "-1";
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // menuStrip1
@@ -136,12 +73,14 @@
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1328, 28);
             this.menuStrip1.TabIndex = 34;
+            this.menuStrip1.Tag = "-1";
             this.menuStrip1.Text = "menuStrip1";
             // 
             // clearToolStripMenuItem
             // 
             this.clearToolStripMenuItem.Name = "clearToolStripMenuItem";
             this.clearToolStripMenuItem.Size = new System.Drawing.Size(57, 24);
+            this.clearToolStripMenuItem.Tag = "-1";
             this.clearToolStripMenuItem.Text = "Clear";
             this.clearToolStripMenuItem.Click += new System.EventHandler(this.clearToolStripMenuItem_Click);
             // 
@@ -152,6 +91,7 @@
             this.BtTattoo.Name = "BtTattoo";
             this.BtTattoo.Size = new System.Drawing.Size(50, 50);
             this.BtTattoo.TabIndex = 33;
+            this.BtTattoo.Tag = "-1";
             this.BtTattoo.UseVisualStyleBackColor = true;
             this.BtTattoo.Click += new System.EventHandler(this.BtTattoo_Click);
             // 
@@ -162,6 +102,7 @@
             this.BtPiercing.Name = "BtPiercing";
             this.BtPiercing.Size = new System.Drawing.Size(50, 50);
             this.BtPiercing.TabIndex = 32;
+            this.BtPiercing.Tag = "-1";
             this.BtPiercing.UseVisualStyleBackColor = true;
             this.BtPiercing.Click += new System.EventHandler(this.BtPiercing_Click);
             // 
@@ -172,6 +113,7 @@
             this.BtNose.Name = "BtNose";
             this.BtNose.Size = new System.Drawing.Size(50, 50);
             this.BtNose.TabIndex = 31;
+            this.BtNose.Tag = "-1";
             this.BtNose.UseVisualStyleBackColor = true;
             this.BtNose.Click += new System.EventHandler(this.BtNose_Click);
             // 
@@ -182,6 +124,7 @@
             this.BtMustache.Name = "BtMustache";
             this.BtMustache.Size = new System.Drawing.Size(50, 50);
             this.BtMustache.TabIndex = 30;
+            this.BtMustache.Tag = "-1";
             this.BtMustache.UseVisualStyleBackColor = true;
             this.BtMustache.Click += new System.EventHandler(this.BtMustache_Click);
             // 
@@ -192,6 +135,7 @@
             this.BtLips.Name = "BtLips";
             this.BtLips.Size = new System.Drawing.Size(50, 50);
             this.BtLips.TabIndex = 29;
+            this.BtLips.Tag = "-1";
             this.BtLips.UseVisualStyleBackColor = true;
             this.BtLips.Click += new System.EventHandler(this.BtLips_Click);
             // 
@@ -202,6 +146,7 @@
             this.BtHeaddress.Name = "BtHeaddress";
             this.BtHeaddress.Size = new System.Drawing.Size(50, 50);
             this.BtHeaddress.TabIndex = 28;
+            this.BtHeaddress.Tag = "-1";
             this.BtHeaddress.UseVisualStyleBackColor = true;
             this.BtHeaddress.Click += new System.EventHandler(this.BtHeaddress_Click);
             // 
@@ -212,6 +157,7 @@
             this.BtHair.Name = "BtHair";
             this.BtHair.Size = new System.Drawing.Size(50, 50);
             this.BtHair.TabIndex = 27;
+            this.BtHair.Tag = "-1";
             this.BtHair.UseVisualStyleBackColor = true;
             this.BtHair.Click += new System.EventHandler(this.BtHair_Click);
             // 
@@ -222,6 +168,7 @@
             this.BtGlasses.Name = "BtGlasses";
             this.BtGlasses.Size = new System.Drawing.Size(50, 50);
             this.BtGlasses.TabIndex = 26;
+            this.BtGlasses.Tag = "-1";
             this.BtGlasses.UseVisualStyleBackColor = true;
             this.BtGlasses.Click += new System.EventHandler(this.BtGlasses_Click);
             // 
@@ -232,6 +179,7 @@
             this.BtForehead.Name = "BtForehead";
             this.BtForehead.Size = new System.Drawing.Size(50, 50);
             this.BtForehead.TabIndex = 25;
+            this.BtForehead.Tag = "-1";
             this.BtForehead.UseVisualStyleBackColor = true;
             this.BtForehead.Click += new System.EventHandler(this.BtForehead_Click);
             // 
@@ -242,6 +190,7 @@
             this.BtFace_shape.Name = "BtFace_shape";
             this.BtFace_shape.Size = new System.Drawing.Size(50, 50);
             this.BtFace_shape.TabIndex = 24;
+            this.BtFace_shape.Tag = "-1";
             this.BtFace_shape.UseVisualStyleBackColor = true;
             this.BtFace_shape.Click += new System.EventHandler(this.BtFace_shape_Click);
             // 
@@ -252,6 +201,7 @@
             this.BtEyes.Name = "BtEyes";
             this.BtEyes.Size = new System.Drawing.Size(50, 50);
             this.BtEyes.TabIndex = 23;
+            this.BtEyes.Tag = "-1";
             this.BtEyes.UseVisualStyleBackColor = true;
             this.BtEyes.Click += new System.EventHandler(this.BtEyes_Click);
             // 
@@ -262,6 +212,7 @@
             this.BtEyebrows.Name = "BtEyebrows";
             this.BtEyebrows.Size = new System.Drawing.Size(50, 50);
             this.BtEyebrows.TabIndex = 22;
+            this.BtEyebrows.Tag = "-1";
             this.BtEyebrows.UseVisualStyleBackColor = true;
             this.BtEyebrows.Click += new System.EventHandler(this.BtEyebrows_Click);
             // 
@@ -272,6 +223,7 @@
             this.BtBeard.Name = "BtBeard";
             this.BtBeard.Size = new System.Drawing.Size(50, 50);
             this.BtBeard.TabIndex = 21;
+            this.BtBeard.Tag = "-1";
             this.BtBeard.UseVisualStyleBackColor = true;
             this.BtBeard.Click += new System.EventHandler(this.BtBeard_Click);
             // 
@@ -281,12 +233,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1328, 767);
-            this.Controls.Add(this.BtSizePlus);
-            this.Controls.Add(this.BtSizeMinus);
-            this.Controls.Add(this.BtRight);
-            this.Controls.Add(this.BtLeft);
-            this.Controls.Add(this.BtDown);
-            this.Controls.Add(this.BtUp);
             this.Controls.Add(this.BtTattoo);
             this.Controls.Add(this.BtPiercing);
             this.Controls.Add(this.BtNose);
@@ -304,6 +250,8 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
@@ -315,13 +263,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button BtSizePlus;
-        private System.Windows.Forms.Button BtSizeMinus;
-        private System.Windows.Forms.Button BtRight;
-        private System.Windows.Forms.Button BtLeft;
-        private System.Windows.Forms.Button BtDown;
-        private System.Windows.Forms.Button BtUp;
         private System.Windows.Forms.Button BtTattoo;
         private System.Windows.Forms.Button BtPiercing;
         private System.Windows.Forms.Button BtNose;

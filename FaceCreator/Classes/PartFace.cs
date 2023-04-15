@@ -13,6 +13,7 @@ namespace FaceCreator.Classes
     {
         public static Graphics Canvas;
         public bool marker { get; private set; }
+        public static ListBox list;
         public int current_index{get;set;}
         public int x, y, h, w;
         protected FlyWeightImage images=new FlyWeightImage(15);
@@ -47,6 +48,11 @@ namespace FaceCreator.Classes
                 case Keys.S: y += 5; break;
             }
             show(); 
+        }
+        public void AddingToListBox( string s)
+        {
+            if (!list.Items.Contains(s)&& marker)
+                list.Items.Add(s);
         }
         public void move(int X, int Y)
         {
@@ -83,6 +89,7 @@ namespace FaceCreator.Classes
             hide();
             marker = true;
             current_index = (int)((Button)sender).Tag;
+            AddingToListBox(buttontForMenu[0].Name);
             show();
         }
 

@@ -23,6 +23,7 @@ namespace FaceCreator
         {
             InitializeComponent();
             PartFace.Canvas = this.CreateGraphics();
+            PartFace.list = listBox1;
         }
         void show_all()
         {
@@ -30,11 +31,6 @@ namespace FaceCreator
             {
                 face.show();
             }
-        }
-        void AddingToListBox(string f)
-        {
-            if (!listBox1.Items.Contains(f))
-                listBox1.Items.Add(f);
         }
         void ValidateMarker()
         {
@@ -91,7 +87,6 @@ namespace FaceCreator
             partFace.SetImages("beard_");
             partFace.ButtonsSummon(13);
             face.Add(partFace);
-            AddingToListBox(partFace.ToString());
 
         }
         private void BtEyebrows_Click(object sender, EventArgs e)
@@ -105,7 +100,6 @@ namespace FaceCreator
             partFace.SetImages("eyebrows_");
             partFace.ButtonsSummon(15);
             face.Add(partFace);
-            AddingToListBox(partFace.ToString());
         }
         private void BtEyes_Click(object sender, EventArgs e)
         {
@@ -118,7 +112,6 @@ namespace FaceCreator
             partFace.SetImages("eyes_");
             partFace.ButtonsSummon(15);
             face.Add(partFace);
-            AddingToListBox(partFace.ToString());
         }
         private void BtFace_shape_Click(object sender, EventArgs e)
         {
@@ -131,7 +124,6 @@ namespace FaceCreator
             partFace.SetImages("face_shape_");
             partFace.ButtonsSummon(10);
             face.Add(partFace);
-            AddingToListBox(partFace.ToString());
         }
         private void BtForehead_Click(object sender, EventArgs e)
         {
@@ -144,7 +136,6 @@ namespace FaceCreator
             partFace.SetImages("forehead_");
             partFace.ButtonsSummon(10);
             face.Add(partFace);
-            AddingToListBox(partFace.ToString());
         }
         private void BtGlasses_Click(object sender, EventArgs e)
         {
@@ -157,7 +148,6 @@ namespace FaceCreator
             partFace.SetImages("glasses_");
             partFace.ButtonsSummon(5);
             face.Add(partFace);
-            AddingToListBox(partFace.ToString());
         }
         private void BtHair_Click(object sender, EventArgs e)
         {
@@ -170,7 +160,6 @@ namespace FaceCreator
             partFace.SetImages("hair_");
             partFace.ButtonsSummon(15);
             face.Add(partFace);
-            AddingToListBox(partFace.ToString());
         }
         private void BtHeaddress_Click(object sender, EventArgs e)
         {
@@ -183,7 +172,6 @@ namespace FaceCreator
             partFace.SetImages("headdress_");
             partFace.ButtonsSummon(7);
             face.Add(partFace);
-            AddingToListBox(partFace.ToString());
         }
         private void BtLips_Click(object sender, EventArgs e)
         {
@@ -196,7 +184,6 @@ namespace FaceCreator
             partFace.SetImages("lips_");
             partFace.ButtonsSummon(10);
             face.Add(partFace);
-            AddingToListBox(partFace.ToString());
         }
         private void BtMustache_Click(object sender, EventArgs e)
         {
@@ -209,7 +196,6 @@ namespace FaceCreator
             partFace.SetImages("mustache_");
             partFace.ButtonsSummon(10);
             face.Add(partFace);
-            AddingToListBox(partFace.ToString());
         }
         private void BtNose_Click(object sender, EventArgs e)
         {
@@ -222,7 +208,6 @@ namespace FaceCreator
             partFace.SetImages("nose_");
             partFace.ButtonsSummon(10);
             face.Add(partFace);
-            AddingToListBox(partFace.ToString());
         }
         private void BtPiercing_Click(object sender, EventArgs e)
         {
@@ -235,7 +220,6 @@ namespace FaceCreator
             partFace.SetImages("piercing_");
             partFace.ButtonsSummon(3);
             face.Add(partFace);
-            AddingToListBox(partFace.ToString());
         }
         private void BtTattoo_Click(object sender, EventArgs e)
         {
@@ -248,7 +232,6 @@ namespace FaceCreator
             partFace.SetImages("tattoo_");
             partFace.ButtonsSummon(3); 
             face.Add(partFace);
-            AddingToListBox(partFace.ToString());
         }
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
@@ -288,10 +271,23 @@ namespace FaceCreator
             }
         }
 
+        private void MoveListItem(int index, int direction)
+        {
+            if (index < 0 || index >= face.Count || face.Count <= 1)
+                return;
+
+            int newIndex = index + direction;
+            if (newIndex < 0 || newIndex >= face.Count)
+                return;
+
+            PartFace temp = face[index];
+            face.RemoveAt(index);
+            face.Insert(newIndex, temp);
+        }
         private void BTMoveDownL_Click(object sender, EventArgs e)
         {
-            int a = listBox1.SelectedIndex;
-            if (listBox1.SelectedIndex+1 < listBox1.Items.Count)
+            MoveListItem(listBox1.SelectedIndex, 1);
+            if (listBox1.SelectedIndex + 1 < listBox1.Items.Count)
             {
                 var selectedItem = listBox1.SelectedItem;
                 var selectedIndex = listBox1.SelectedIndex;
@@ -299,15 +295,12 @@ namespace FaceCreator
                 listBox1.Items.Insert(selectedIndex + 1, selectedItem);
                 listBox1.SetSelected(selectedIndex + 1, true);
             }
-            PartFace temp = face[listBox1.SelectedIndex];
-            for (int i = 0; i < face.Count; i++)
-            {
-
-            }
+            show_all();
         }
 
         private void BTMoveUpL_Click(object sender, EventArgs e)
         {
+            MoveListItem(listBox1.SelectedIndex, -1);
             if (listBox1.SelectedIndex > 0)
             {
                 var selectedItem = listBox1.SelectedItem;
@@ -316,6 +309,7 @@ namespace FaceCreator
                 listBox1.Items.Insert(selectedIndex - 1, selectedItem);
                 listBox1.SetSelected(selectedIndex - 1, true);
             }
+            show_all() ;
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -329,6 +323,11 @@ namespace FaceCreator
                     face[face.Count - 1] = temp;
                     show_all();
                 }
+        }
+
+        private void listBox1_Click(object sender, EventArgs e)
+        {
+            current = face[listBox1.SelectedIndex];
         }
     }
 }

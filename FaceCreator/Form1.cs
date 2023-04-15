@@ -44,7 +44,10 @@ namespace FaceCreator
         }
         private void clearToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            foreach (PartFace face in face)
+                face.ClearComponents();
             face.Clear();
+            listBox1.Items.Clear();
             PartFace.Canvas.Clear(Color.White);
         }
         private void Form1_MouseDown(object sender, MouseEventArgs e)
@@ -87,7 +90,6 @@ namespace FaceCreator
             partFace.SetImages("beard_");
             partFace.ButtonsSummon(13);
             face.Add(partFace);
-
         }
         private void BtEyebrows_Click(object sender, EventArgs e)
         {
@@ -236,7 +238,10 @@ namespace FaceCreator
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             if ((e.KeyCode == Keys.A || e.KeyCode == Keys.W || e.KeyCode == Keys.S || e.KeyCode == Keys.D) && current != null)
-            current.move(e);
+            {
+                current.move(e);
+                show_all();
+            }
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -251,11 +256,9 @@ namespace FaceCreator
             if (current != null)
             {
                 current.hide();
-                current.h += 5;
-                current.w += 5;
-                current.x -= 5;
-                current.y -= 5;
-                current.show();
+                current.h = (int)((double)current.h * 1.1);
+                current.w = (int)((double)current.w * 1.1);
+                show_all();
             }
         }
         private void BTSizeMinus_Click(object sender, EventArgs e)
@@ -263,14 +266,11 @@ namespace FaceCreator
             if (current != null)
             {
                 current.hide();
-                current.h -= 5;
-                current.w -= 5;
-                current.x += 5;
-                current.y += 5;
-                current.show();
+                current.h = (int)((double)current.h / 1.1);
+                current.w = (int)((double)current.w / 1.1);
+                show_all();
             }
         }
-
         private void MoveListItem(int index, int direction)
         {
             if (index < 0 || index >= face.Count || face.Count <= 1)
@@ -297,7 +297,6 @@ namespace FaceCreator
             }
             show_all();
         }
-
         private void BTMoveUpL_Click(object sender, EventArgs e)
         {
             MoveListItem(listBox1.SelectedIndex, -1);
@@ -327,6 +326,7 @@ namespace FaceCreator
 
         private void listBox1_Click(object sender, EventArgs e)
         {
+            if(listBox1.SelectedIndex>=0)
             current = face[listBox1.SelectedIndex];
         }
     }

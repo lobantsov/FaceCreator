@@ -70,6 +70,7 @@ namespace FaceCreator.Classes
                 buttontForMenu[i].Location = new Point(88 + j2 * 80, 61 + j * 80);
                 buttontForMenu[i].Height = 75;
                 buttontForMenu[i].Width = 75;
+                buttontForMenu[i].Name = images.Name();
                 buttontForMenu[i].BackgroundImage = images.getImageBeard(i);
                 buttontForMenu[i].Tag = i;
                 buttontForMenu[i].BackgroundImageLayout = ImageLayout.Zoom;

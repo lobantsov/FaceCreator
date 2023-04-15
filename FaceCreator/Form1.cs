@@ -31,7 +31,11 @@ namespace FaceCreator
                 face.show();
             }
         }
-
+        void AddingToListBox(string f)
+        {
+            if (!listBox1.Items.Contains(f))
+                listBox1.Items.Add(f);
+        }
         void ValidateMarker()
         {
             for (int i = 0; i < face.Count; i++)
@@ -42,18 +46,11 @@ namespace FaceCreator
                 }
             }
         }
-
         private void clearToolStripMenuItem_Click(object sender, EventArgs e)
         {
             face.Clear();
             PartFace.Canvas.Clear(Color.White);
         }
-
-        private void BtSizePlus_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
             Text = face.Count.ToString();
@@ -69,13 +66,12 @@ namespace FaceCreator
                     break;
                 }
             }
+            
         }
-
         private void Form1_MouseUp(object sender, MouseEventArgs e)
         {
             move = false;
         }
-
         private void Form1_MouseMove(object sender, MouseEventArgs e)
         {
             if(move)
@@ -95,6 +91,7 @@ namespace FaceCreator
             partFace.SetImages("beard_");
             partFace.ButtonsSummon(13);
             face.Add(partFace);
+            AddingToListBox(partFace.ToString());
 
         }
         private void BtEyebrows_Click(object sender, EventArgs e)
@@ -107,10 +104,9 @@ namespace FaceCreator
             partFace.ClearComponents();
             partFace.SetImages("eyebrows_");
             partFace.ButtonsSummon(15);
-
             face.Add(partFace);
+            AddingToListBox(partFace.ToString());
         }
-
         private void BtEyes_Click(object sender, EventArgs e)
         {
             ValidateMarker();
@@ -122,9 +118,8 @@ namespace FaceCreator
             partFace.SetImages("eyes_");
             partFace.ButtonsSummon(15);
             face.Add(partFace);
-
+            AddingToListBox(partFace.ToString());
         }
-
         private void BtFace_shape_Click(object sender, EventArgs e)
         {
             ValidateMarker();
@@ -136,8 +131,8 @@ namespace FaceCreator
             partFace.SetImages("face_shape_");
             partFace.ButtonsSummon(10);
             face.Add(partFace);
+            AddingToListBox(partFace.ToString());
         }
-
         private void BtForehead_Click(object sender, EventArgs e)
         {
             ValidateMarker();
@@ -149,8 +144,8 @@ namespace FaceCreator
             partFace.SetImages("forehead_");
             partFace.ButtonsSummon(10);
             face.Add(partFace);
+            AddingToListBox(partFace.ToString());
         }
-
         private void BtGlasses_Click(object sender, EventArgs e)
         {
             ValidateMarker();
@@ -162,8 +157,8 @@ namespace FaceCreator
             partFace.SetImages("glasses_");
             partFace.ButtonsSummon(5);
             face.Add(partFace);
+            AddingToListBox(partFace.ToString());
         }
-
         private void BtHair_Click(object sender, EventArgs e)
         {
             ValidateMarker();
@@ -175,8 +170,8 @@ namespace FaceCreator
             partFace.SetImages("hair_");
             partFace.ButtonsSummon(15);
             face.Add(partFace);
+            AddingToListBox(partFace.ToString());
         }
-
         private void BtHeaddress_Click(object sender, EventArgs e)
         {
             ValidateMarker();
@@ -188,8 +183,8 @@ namespace FaceCreator
             partFace.SetImages("headdress_");
             partFace.ButtonsSummon(7);
             face.Add(partFace);
+            AddingToListBox(partFace.ToString());
         }
-
         private void BtLips_Click(object sender, EventArgs e)
         {
             ValidateMarker();
@@ -201,8 +196,8 @@ namespace FaceCreator
             partFace.SetImages("lips_");
             partFace.ButtonsSummon(10);
             face.Add(partFace);
+            AddingToListBox(partFace.ToString());
         }
-
         private void BtMustache_Click(object sender, EventArgs e)
         {
             ValidateMarker();
@@ -214,8 +209,8 @@ namespace FaceCreator
             partFace.SetImages("mustache_");
             partFace.ButtonsSummon(10);
             face.Add(partFace);
+            AddingToListBox(partFace.ToString());
         }
-
         private void BtNose_Click(object sender, EventArgs e)
         {
             ValidateMarker();
@@ -227,8 +222,8 @@ namespace FaceCreator
             partFace.SetImages("nose_");
             partFace.ButtonsSummon(10);
             face.Add(partFace);
+            AddingToListBox(partFace.ToString());
         }
-
         private void BtPiercing_Click(object sender, EventArgs e)
         {
             ValidateMarker();
@@ -240,8 +235,8 @@ namespace FaceCreator
             partFace.SetImages("piercing_");
             partFace.ButtonsSummon(3);
             face.Add(partFace);
+            AddingToListBox(partFace.ToString());
         }
-
         private void BtTattoo_Click(object sender, EventArgs e)
         {
             ValidateMarker();
@@ -253,15 +248,13 @@ namespace FaceCreator
             partFace.SetImages("tattoo_");
             partFace.ButtonsSummon(3); 
             face.Add(partFace);
+            AddingToListBox(partFace.ToString());
         }
-
-
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.A || e.KeyCode == Keys.W || e.KeyCode == Keys.S || e.KeyCode == Keys.D && current != null)
+            if ((e.KeyCode == Keys.A || e.KeyCode == Keys.W || e.KeyCode == Keys.S || e.KeyCode == Keys.D) && current != null)
             current.move(e);
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             for(int i = 0; i<this.Controls.Count; i++)
@@ -269,6 +262,73 @@ namespace FaceCreator
                 if (Convert.ToInt32(this.Controls[i].Tag)<0)
                     this.Controls[i].KeyDown += new KeyEventHandler(Form1_KeyDown);
             }
+        }
+        private void BTSizePlus_Click_1(object sender, EventArgs e)
+        {
+            if (current != null)
+            {
+                current.hide();
+                current.h += 5;
+                current.w += 5;
+                current.x -= 5;
+                current.y -= 5;
+                current.show();
+            }
+        }
+        private void BTSizeMinus_Click(object sender, EventArgs e)
+        {
+            if (current != null)
+            {
+                current.hide();
+                current.h -= 5;
+                current.w -= 5;
+                current.x += 5;
+                current.y += 5;
+                current.show();
+            }
+        }
+
+        private void BTMoveDownL_Click(object sender, EventArgs e)
+        {
+            int a = listBox1.SelectedIndex;
+            if (listBox1.SelectedIndex+1 < listBox1.Items.Count)
+            {
+                var selectedItem = listBox1.SelectedItem;
+                var selectedIndex = listBox1.SelectedIndex;
+                listBox1.Items.RemoveAt(selectedIndex);
+                listBox1.Items.Insert(selectedIndex + 1, selectedItem);
+                listBox1.SetSelected(selectedIndex + 1, true);
+            }
+            PartFace temp = face[listBox1.SelectedIndex];
+            for (int i = 0; i < face.Count; i++)
+            {
+
+            }
+        }
+
+        private void BTMoveUpL_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex > 0)
+            {
+                var selectedItem = listBox1.SelectedItem;
+                var selectedIndex = listBox1.SelectedIndex;
+                listBox1.Items.RemoveAt(selectedIndex);
+                listBox1.Items.Insert(selectedIndex - 1, selectedItem);
+                listBox1.SetSelected(selectedIndex - 1, true);
+            }
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (current != null)
+                for (int i = face.Count - 1; i > current.current_index; i--)
+                {
+                    current.hide();
+                    PartFace temp = current;
+                    face[i] = face[i - 1];
+                    face[face.Count - 1] = temp;
+                    show_all();
+                }
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,12 +41,12 @@ namespace FaceCreator.Classes
             hide();
             switch (dir.KeyCode)
             {
-                case Keys.A: x -= 1; break;
-                case Keys.D: x += 1; break;
-                case Keys.W: y -= 1; break;
-                case Keys.S: y += 1; break;
+                case Keys.A: x -= 5; break;
+                case Keys.D: x += 5; break;
+                case Keys.W: y -= 5; break;
+                case Keys.S: y += 5; break;
             }
-            show();
+            show(); 
         }
         public void move(int X, int Y)
         {

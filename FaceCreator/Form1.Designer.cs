@@ -76,7 +76,7 @@
             this.clearToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1328, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1328, 30);
             this.menuStrip1.TabIndex = 34;
             this.menuStrip1.Tag = "-1";
             this.menuStrip1.Text = "menuStrip1";
@@ -259,9 +259,9 @@
             this.listBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(1129, 28);
+            this.listBox1.Location = new System.Drawing.Point(1129, 30);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(199, 739);
+            this.listBox1.Size = new System.Drawing.Size(199, 737);
             this.listBox1.TabIndex = 37;
             this.listBox1.Tag = "-1";
             this.listBox1.Click += new System.EventHandler(this.listBox1_Click);
@@ -270,9 +270,9 @@
             // BTMoveUpL
             // 
             this.BTMoveUpL.Dock = System.Windows.Forms.DockStyle.Right;
-            this.BTMoveUpL.Location = new System.Drawing.Point(1102, 28);
+            this.BTMoveUpL.Location = new System.Drawing.Point(1102, 30);
             this.BTMoveUpL.Name = "BTMoveUpL";
-            this.BTMoveUpL.Size = new System.Drawing.Size(27, 739);
+            this.BTMoveUpL.Size = new System.Drawing.Size(27, 737);
             this.BTMoveUpL.TabIndex = 38;
             this.BTMoveUpL.Tag = "-1";
             this.BTMoveUpL.Text = "^";
@@ -282,9 +282,9 @@
             // BTMoveDownL
             // 
             this.BTMoveDownL.Dock = System.Windows.Forms.DockStyle.Right;
-            this.BTMoveDownL.Location = new System.Drawing.Point(1075, 28);
+            this.BTMoveDownL.Location = new System.Drawing.Point(1075, 30);
             this.BTMoveDownL.Name = "BTMoveDownL";
-            this.BTMoveDownL.Size = new System.Drawing.Size(27, 739);
+            this.BTMoveDownL.Size = new System.Drawing.Size(27, 737);
             this.BTMoveDownL.TabIndex = 39;
             this.BTMoveDownL.Tag = "-1";
             this.BTMoveDownL.Text = "v";

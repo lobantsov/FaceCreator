@@ -19,6 +19,7 @@ namespace FaceCreator
         List<PartFace> face = new List<PartFace>();
         PartFace current = null;
         bool move = false;
+        bool currentMode = false;
         public Form1()
         {
             InitializeComponent();
@@ -44,11 +45,16 @@ namespace FaceCreator
         }
         private void clearToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            foreach (PartFace face in face)
-                face.ClearComponents();
-            face.Clear();
-            listBox1.Items.Clear();
-            PartFace.Canvas.Clear(Color.White);
+            FSave fs = new FSave();
+            fs.ShowDialog();
+            if (fs.DialogResult == DialogResult.OK)
+            {
+                foreach (PartFace face in face)
+                    face.ClearComponents();
+                face.Clear();
+                listBox1.Items.Clear();
+                PartFace.Canvas.Clear(Color.White);
+            }
         }
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -286,6 +292,7 @@ namespace FaceCreator
         }
         private void BTMoveDownL_Click(object sender, EventArgs e)
         {
+            currentMode = true;
             MoveListItem(listBox1.SelectedIndex, 1);
             if (listBox1.SelectedIndex + 1 < listBox1.Items.Count)
             {
@@ -299,6 +306,7 @@ namespace FaceCreator
         }
         private void BTMoveUpL_Click(object sender, EventArgs e)
         {
+            currentMode = true;
             MoveListItem(listBox1.SelectedIndex, -1);
             if (listBox1.SelectedIndex > 0)
             {
@@ -312,7 +320,7 @@ namespace FaceCreator
         }
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (current != null)
+            if (current != null && currentMode)
                 for (int i = face.Count - 1; i > current.current_index; i--)
                 {
                     current.hide();
@@ -324,6 +332,7 @@ namespace FaceCreator
         }
         private void listBox1_Click(object sender, EventArgs e)
         {
+            currentMode=false;
             if (listBox1.SelectedIndex >= 0 && listBox1.SelectedIndex <= face.Count) 
                 current = face[listBox1.SelectedIndex];
         }

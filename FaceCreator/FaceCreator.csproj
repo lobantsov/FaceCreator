@@ -46,32 +46,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Beard.cs" />
-    <Compile Include="Classes\Eyebrows.cs" />
-    <Compile Include="Classes\Eyes.cs" />
-    <Compile Include="Classes\Face_shape.cs" />
     <Compile Include="Classes\FlyWeightImage.cs" />
-    <Compile Include="Classes\Forehead.cs" />
-    <Compile Include="Classes\Glasses.cs" />
-    <Compile Include="Classes\Hair.cs" />
-    <Compile Include="Classes\Headdress.cs" />
-    <Compile Include="Classes\Lips.cs" />
-    <Compile Include="Classes\Mustache.cs" />
-    <Compile Include="Classes\Nose.cs" />
     <Compile Include="Classes\PartFace.cs" />
-    <Compile Include="Classes\Piercing.cs" />
-    <Compile Include="Classes\Tattoo.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FSave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSave.Designer.cs">
+      <DependentUpon>FSave.cs</DependentUpon>
+    </Compile>
     <Compile Include="PlayerAndCollision.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSave.resx">
+      <DependentUpon>FSave.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -134,51 +130,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tattoo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_7.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_8.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_10.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_11.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_12.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_13.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_14.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_15.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\beard_1.png" />
@@ -263,6 +214,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\eyebrows_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_15.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\face_shape_1.png" />

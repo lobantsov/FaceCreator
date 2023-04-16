@@ -9,8 +9,10 @@ namespace FaceCreator.Classes
 {
     internal class FlyWeightImage
     {
-        List<Bitmap> imageList = new List<Bitmap>();
+        public List<Bitmap> imageList = new List<Bitmap>();
         int countImages;
+        string name;
+        int index;
         public FlyWeightImage() { }
         public FlyWeightImage(int countImages)
         {
@@ -18,10 +20,17 @@ namespace FaceCreator.Classes
         }
         public Bitmap getImageBeard(int index)
         {
+            this.index = index;
             return imageList[index];
+        }
+        public int GetIndex()
+        {
+            return index;
         }
         public void GetBitmapsFromResourceFolder(string imageName)
         {
+            bool a = true;
+            int j = 0;
             for (int i = 1; i <= countImages; i++)
             {
                 string resourceName = $"{imageName}{i}";
@@ -30,7 +39,20 @@ namespace FaceCreator.Classes
                 {
                     imageList.Add(bitmap);
                 }
+                while (a)
+                {
+                    if (resourceName[j] != '_')
+                    {
+                        name += resourceName[j];
+                        j++;
+                    }
+                    else a=false;
+                }
             }
+        }
+        public string Name()
+        {
+            return name;
         }
     }
 }

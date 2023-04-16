@@ -14,8 +14,8 @@ namespace FaceCreator.Classes
         public Beard(int X, int Y) : base(X, Y)
         {
             BeardImage.GetBitmapsFromResourceFolder("beard_");
-            h = BeardImage.getImageBeard(0).Height;
-            w = BeardImage.getImageBeard(0).Width;
+            h = BeardImage.getImageBeard(BeardImage.GetIndex()).Height;
+            w = BeardImage.getImageBeard(BeardImage.GetIndex()).Width;
         }
     }
 }

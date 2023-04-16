@@ -84,7 +84,7 @@ namespace FaceCreator
             ValidateMarker();
             int x = ((Button)sender).Left+900;
             int y = ((Button)sender).Top;
-            PartFace partFace = new Beard(x, y);
+            PartFace partFace = new PartFace(x, y);
             partFace.currentForm = this;
             partFace.ClearComponents();
             partFace.SetImages("beard_");
@@ -96,7 +96,7 @@ namespace FaceCreator
             ValidateMarker();
             int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
-            PartFace partFace = new Eyebrows(x, y);
+            PartFace partFace = new PartFace(x, y);
             partFace.currentForm = this;
             partFace.ClearComponents();
             partFace.SetImages("eyebrows_");
@@ -108,7 +108,7 @@ namespace FaceCreator
             ValidateMarker();
             int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
-            PartFace partFace = new Eyes(x, y);
+            PartFace partFace = new PartFace(x, y);
             partFace.currentForm = this;
             partFace.ClearComponents();
             partFace.SetImages("eyes_");
@@ -120,7 +120,7 @@ namespace FaceCreator
             ValidateMarker();
             int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
-            PartFace partFace = new Face_shape(x, y);
+            PartFace partFace = new PartFace(x, y);
             partFace.currentForm = this;
             partFace.ClearComponents();
             partFace.SetImages("face_shape_");
@@ -132,7 +132,7 @@ namespace FaceCreator
             ValidateMarker();
             int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
-            PartFace partFace = new Forehead(x, y);
+            PartFace partFace = new PartFace(x, y);
             partFace.currentForm = this;
             partFace.ClearComponents();
             partFace.SetImages("forehead_");
@@ -144,7 +144,7 @@ namespace FaceCreator
             ValidateMarker();
             int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
-            PartFace partFace = new Glasses(x, y);
+            PartFace partFace = new PartFace(x, y);
             partFace.currentForm = this;
             partFace.ClearComponents();
             partFace.SetImages("glasses_");
@@ -156,7 +156,7 @@ namespace FaceCreator
             ValidateMarker();
             int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
-            PartFace partFace = new Hair(x, y);
+            PartFace partFace = new PartFace(x, y);
             partFace.currentForm = this;
             partFace.ClearComponents();
             partFace.SetImages("hair_");
@@ -168,7 +168,7 @@ namespace FaceCreator
             ValidateMarker();
             int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
-            PartFace partFace = new Headdress(x, y);
+            PartFace partFace = new PartFace(x, y);
             partFace.currentForm = this;
             partFace.ClearComponents();
             partFace.SetImages("headdress_");
@@ -180,7 +180,7 @@ namespace FaceCreator
             ValidateMarker();
             int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
-            PartFace partFace = new Lips(x, y);
+            PartFace partFace = new PartFace(x, y);
             partFace.currentForm = this;
             partFace.ClearComponents();
             partFace.SetImages("lips_");
@@ -192,7 +192,7 @@ namespace FaceCreator
             ValidateMarker();
             int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
-            PartFace partFace = new Mustache(x, y);
+            PartFace partFace = new PartFace(x, y);
             partFace.currentForm = this;
             partFace.ClearComponents();
             partFace.SetImages("mustache_");
@@ -204,7 +204,7 @@ namespace FaceCreator
             ValidateMarker();
             int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
-            PartFace partFace = new Nose(x, y);
+            PartFace partFace = new PartFace(x, y);
             partFace.currentForm = this;
             partFace.ClearComponents();
             partFace.SetImages("nose_");
@@ -216,7 +216,7 @@ namespace FaceCreator
             ValidateMarker();
             int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
-            PartFace partFace = new Piercing(x, y);
+            PartFace partFace = new PartFace(x, y);
             partFace.currentForm = this;
             partFace.ClearComponents();
             partFace.SetImages("piercing_");
@@ -228,7 +228,7 @@ namespace FaceCreator
             ValidateMarker();
             int x = ((Button)sender).Left + 900;
             int y = ((Button)sender).Top;
-            PartFace partFace = new Tattoo(x, y);
+            PartFace partFace = new PartFace(x, y);
             partFace.currentForm = this;
             partFace.ClearComponents();
             partFace.SetImages("tattoo_");
@@ -324,8 +324,8 @@ namespace FaceCreator
         }
         private void listBox1_Click(object sender, EventArgs e)
         {
-            if(listBox1.SelectedIndex>=0)
-            current = face[listBox1.SelectedIndex];
+            if (listBox1.SelectedIndex >= 0 && listBox1.SelectedIndex <= face.Count) 
+                current = face[listBox1.SelectedIndex];
         }
     }
 }

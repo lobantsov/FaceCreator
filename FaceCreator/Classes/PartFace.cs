@@ -91,6 +91,8 @@ namespace FaceCreator.Classes
             marker = true;
             current_index = (int)((Button)sender).Tag;
             AddingToListBox(buttontForMenu[0].Name);
+            h=images.getImageBeard(current_index).Height;
+            w = images.getImageBeard(current_index).Width;
             show();
         }
 

@@ -46,21 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Beard.cs" />
-    <Compile Include="Classes\Eyebrows.cs" />
-    <Compile Include="Classes\Eyes.cs" />
-    <Compile Include="Classes\Face_shape.cs" />
     <Compile Include="Classes\FlyWeightImage.cs" />
-    <Compile Include="Classes\Forehead.cs" />
-    <Compile Include="Classes\Glasses.cs" />
-    <Compile Include="Classes\Hair.cs" />
-    <Compile Include="Classes\Headdress.cs" />
-    <Compile Include="Classes\Lips.cs" />
-    <Compile Include="Classes\Mustache.cs" />
-    <Compile Include="Classes\Nose.cs" />
     <Compile Include="Classes\PartFace.cs" />
-    <Compile Include="Classes\Piercing.cs" />
-    <Compile Include="Classes\Tattoo.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

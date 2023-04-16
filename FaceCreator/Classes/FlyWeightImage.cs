@@ -12,6 +12,7 @@ namespace FaceCreator.Classes
         public List<Bitmap> imageList = new List<Bitmap>();
         int countImages;
         string name;
+        int index;
         public FlyWeightImage() { }
         public FlyWeightImage(int countImages)
         {
@@ -19,7 +20,12 @@ namespace FaceCreator.Classes
         }
         public Bitmap getImageBeard(int index)
         {
+            this.index = index;
             return imageList[index];
+        }
+        public int GetIndex()
+        {
+            return index;
         }
         public void GetBitmapsFromResourceFolder(string imageName)
         {

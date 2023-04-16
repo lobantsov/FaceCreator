@@ -310,7 +310,6 @@ namespace FaceCreator
             }
             show_all() ;
         }
-
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (current != null)
@@ -323,7 +322,6 @@ namespace FaceCreator
                     show_all();
                 }
         }
-
         private void listBox1_Click(object sender, EventArgs e)
         {
             if(listBox1.SelectedIndex>=0)

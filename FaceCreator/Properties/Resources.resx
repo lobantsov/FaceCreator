@@ -124,6 +124,9 @@
   <data name="forehead" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\forehead.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="lips" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lips.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="tattoo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tattoo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -135,9 +138,6 @@
   </data>
   <data name="beard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\beard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lips" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lips.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face_shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\face_shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -156,51 +156,6 @@
   </data>
   <data name="eyebrows" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyebrows.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eyes_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyes_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eyes_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyes_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eyes_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyes_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eyes_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyes_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eyes_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyes_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eyes_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyes_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eyes_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyes_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eyes_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyes_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eyes_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyes_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eyes_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyes_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eyes_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyes_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eyes_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyes_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eyes_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyes_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eyes_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyes_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eyes_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyes_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="beard_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\beard_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -285,6 +240,51 @@
   </data>
   <data name="eyebrows_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyebrows_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyes_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face_shape_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\face_shape_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

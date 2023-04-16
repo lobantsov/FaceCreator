@@ -136,51 +136,6 @@
     <None Include="Resources\tattoo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\eyes_1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_7.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_8.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_10.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_11.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_12.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_13.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_14.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eyes_15.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\beard_1.png" />
   </ItemGroup>
   <ItemGroup>
@@ -263,6 +218,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\eyebrows_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes_15.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\face_shape_1.png" />

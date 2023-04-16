@@ -32,6 +32,11 @@
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.clearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.BTSizePlus = new System.Windows.Forms.Button();
+            this.BTSizeMinus = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.BTMoveUpL = new System.Windows.Forms.Button();
+            this.BTMoveDownL = new System.Windows.Forms.Button();
             this.BtTattoo = new System.Windows.Forms.Button();
             this.BtPiercing = new System.Windows.Forms.Button();
             this.BtNose = new System.Windows.Forms.Button();
@@ -45,11 +50,6 @@
             this.BtEyes = new System.Windows.Forms.Button();
             this.BtEyebrows = new System.Windows.Forms.Button();
             this.BtBeard = new System.Windows.Forms.Button();
-            this.BTSizePlus = new System.Windows.Forms.Button();
-            this.BTSizeMinus = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.BTMoveUpL = new System.Windows.Forms.Button();
-            this.BTMoveDownL = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,7 +76,7 @@
             this.clearToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1328, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1328, 28);
             this.menuStrip1.TabIndex = 34;
             this.menuStrip1.Tag = "-1";
             this.menuStrip1.Text = "menuStrip1";
@@ -88,6 +88,65 @@
             this.clearToolStripMenuItem.Tag = "-1";
             this.clearToolStripMenuItem.Text = "Clear All";
             this.clearToolStripMenuItem.Click += new System.EventHandler(this.clearToolStripMenuItem_Click);
+            // 
+            // BTSizePlus
+            // 
+            this.BTSizePlus.Location = new System.Drawing.Point(12, 31);
+            this.BTSizePlus.Name = "BTSizePlus";
+            this.BTSizePlus.Size = new System.Drawing.Size(50, 23);
+            this.BTSizePlus.TabIndex = 35;
+            this.BTSizePlus.Tag = "-1";
+            this.BTSizePlus.Text = "+";
+            this.BTSizePlus.UseVisualStyleBackColor = true;
+            this.BTSizePlus.Click += new System.EventHandler(this.BTSizePlus_Click_1);
+            // 
+            // BTSizeMinus
+            // 
+            this.BTSizeMinus.Location = new System.Drawing.Point(12, 60);
+            this.BTSizeMinus.Name = "BTSizeMinus";
+            this.BTSizeMinus.Size = new System.Drawing.Size(50, 23);
+            this.BTSizeMinus.TabIndex = 36;
+            this.BTSizeMinus.Tag = "-1";
+            this.BTSizeMinus.Text = "-";
+            this.BTSizeMinus.UseVisualStyleBackColor = true;
+            this.BTSizeMinus.Click += new System.EventHandler(this.BTSizeMinus_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(1129, 28);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(199, 739);
+            this.listBox1.TabIndex = 37;
+            this.listBox1.Tag = "-1";
+            this.listBox1.Click += new System.EventHandler(this.listBox1_Click);
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // BTMoveUpL
+            // 
+            this.BTMoveUpL.Dock = System.Windows.Forms.DockStyle.Right;
+            this.BTMoveUpL.Location = new System.Drawing.Point(1102, 28);
+            this.BTMoveUpL.Name = "BTMoveUpL";
+            this.BTMoveUpL.Size = new System.Drawing.Size(27, 739);
+            this.BTMoveUpL.TabIndex = 38;
+            this.BTMoveUpL.Tag = "-1";
+            this.BTMoveUpL.Text = "^";
+            this.BTMoveUpL.UseVisualStyleBackColor = true;
+            this.BTMoveUpL.Click += new System.EventHandler(this.BTMoveUpL_Click);
+            // 
+            // BTMoveDownL
+            // 
+            this.BTMoveDownL.Dock = System.Windows.Forms.DockStyle.Right;
+            this.BTMoveDownL.Location = new System.Drawing.Point(1075, 28);
+            this.BTMoveDownL.Name = "BTMoveDownL";
+            this.BTMoveDownL.Size = new System.Drawing.Size(27, 739);
+            this.BTMoveDownL.TabIndex = 39;
+            this.BTMoveDownL.Tag = "-1";
+            this.BTMoveDownL.Text = "v";
+            this.BTMoveDownL.UseVisualStyleBackColor = true;
+            this.BTMoveDownL.Click += new System.EventHandler(this.BTMoveDownL_Click);
             // 
             // BtTattoo
             // 
@@ -231,65 +290,6 @@
             this.BtBeard.Tag = "-1";
             this.BtBeard.UseVisualStyleBackColor = true;
             this.BtBeard.Click += new System.EventHandler(this.BtBeard_Click);
-            // 
-            // BTSizePlus
-            // 
-            this.BTSizePlus.Location = new System.Drawing.Point(12, 31);
-            this.BTSizePlus.Name = "BTSizePlus";
-            this.BTSizePlus.Size = new System.Drawing.Size(50, 23);
-            this.BTSizePlus.TabIndex = 35;
-            this.BTSizePlus.Tag = "-1";
-            this.BTSizePlus.Text = "+";
-            this.BTSizePlus.UseVisualStyleBackColor = true;
-            this.BTSizePlus.Click += new System.EventHandler(this.BTSizePlus_Click_1);
-            // 
-            // BTSizeMinus
-            // 
-            this.BTSizeMinus.Location = new System.Drawing.Point(12, 60);
-            this.BTSizeMinus.Name = "BTSizeMinus";
-            this.BTSizeMinus.Size = new System.Drawing.Size(50, 23);
-            this.BTSizeMinus.TabIndex = 36;
-            this.BTSizeMinus.Tag = "-1";
-            this.BTSizeMinus.Text = "-";
-            this.BTSizeMinus.UseVisualStyleBackColor = true;
-            this.BTSizeMinus.Click += new System.EventHandler(this.BTSizeMinus_Click);
-            // 
-            // listBox1
-            // 
-            this.listBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(1129, 30);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(199, 737);
-            this.listBox1.TabIndex = 37;
-            this.listBox1.Tag = "-1";
-            this.listBox1.Click += new System.EventHandler(this.listBox1_Click);
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
-            // 
-            // BTMoveUpL
-            // 
-            this.BTMoveUpL.Dock = System.Windows.Forms.DockStyle.Right;
-            this.BTMoveUpL.Location = new System.Drawing.Point(1102, 30);
-            this.BTMoveUpL.Name = "BTMoveUpL";
-            this.BTMoveUpL.Size = new System.Drawing.Size(27, 737);
-            this.BTMoveUpL.TabIndex = 38;
-            this.BTMoveUpL.Tag = "-1";
-            this.BTMoveUpL.Text = "^";
-            this.BTMoveUpL.UseVisualStyleBackColor = true;
-            this.BTMoveUpL.Click += new System.EventHandler(this.BTMoveUpL_Click);
-            // 
-            // BTMoveDownL
-            // 
-            this.BTMoveDownL.Dock = System.Windows.Forms.DockStyle.Right;
-            this.BTMoveDownL.Location = new System.Drawing.Point(1075, 30);
-            this.BTMoveDownL.Name = "BTMoveDownL";
-            this.BTMoveDownL.Size = new System.Drawing.Size(27, 737);
-            this.BTMoveDownL.TabIndex = 39;
-            this.BTMoveDownL.Tag = "-1";
-            this.BTMoveDownL.Text = "v";
-            this.BTMoveDownL.UseVisualStyleBackColor = true;
-            this.BTMoveDownL.Click += new System.EventHandler(this.BTMoveDownL_Click);
             // 
             // Form1
             // 

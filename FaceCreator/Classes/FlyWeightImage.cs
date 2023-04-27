@@ -18,7 +18,7 @@ namespace FaceCreator.Classes
         {
             this.countImages = countImages;
         }
-        public Bitmap getImageBeard(int index)
+        public Bitmap getImage(int index)
         {
             this.index = index;
             return imageList[index];

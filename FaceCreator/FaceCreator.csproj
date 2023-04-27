@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Face.cs" />
     <Compile Include="Classes\FlyWeightImage.cs" />
     <Compile Include="Classes\PartFace.cs" />
     <Compile Include="Form1.cs">

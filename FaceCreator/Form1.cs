@@ -16,7 +16,7 @@ namespace FaceCreator
 {
     public partial class Form1 : Form
     {
-        List<PartFace> face = new List<PartFace>();
+        private List<PartFace> face = PartFace.listPartFaces;
         PartFace current = null;
         bool move = false;
         bool currentMode = false;

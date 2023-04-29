@@ -133,32 +133,26 @@
   <data name="face_shape_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\face_shape_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="piercing_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\piercing_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eyebrows_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hair_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hair_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eyes_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyes_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lips_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lips_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lips_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lips_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="face_shape_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\face_shape_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="piercing" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\piercing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lips_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lips_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lips_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lips_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="forehead_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\forehead_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="beard_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beard_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hair_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hair_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lips_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lips_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eyes_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyes_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,29 +160,32 @@
   <data name="eyebrows_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyebrows_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="eyebrows_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="forehead_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\forehead_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="forehead_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\forehead_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mustache_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mustache_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hair_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hair_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="piercing_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\piercing_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="face_shape_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\face_shape_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="face_shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\face_shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lips_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lips_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="piercing_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\piercing_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eyebrows" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyebrows.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eyebrows_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyebrows_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mustache_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mustache_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="nose_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nose_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="piercing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\piercing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eyes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,8 +196,11 @@
   <data name="beard_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\beard_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="forehead_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\forehead_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="headdress_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\headdress_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="face_shape_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\face_shape_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="beard_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\beard_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,17 +208,17 @@
   <data name="face_shape_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\face_shape_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="hair_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lips" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lips.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="face_shape_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\face_shape_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lips_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lips_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="forehead_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\forehead_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hair_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hair_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tattoo_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tattoo_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="headdress_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\headdress_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,8 +232,8 @@
   <data name="hair_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hair_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eyes_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyes_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="headdress_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\headdress_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="forehead_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\forehead_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -244,11 +244,8 @@
   <data name="eyes_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyes_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mustache_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mustache_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="nose_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nose_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="beard_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beard_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eyes_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyes_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -259,23 +256,14 @@
   <data name="face_shape_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\face_shape_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mustache_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mustache_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hair_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hair_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eyebrows_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eyes_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyes_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eyebrows_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyebrows_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="headdress_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\headdress_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="piercing_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\piercing_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eyebrows_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyebrows_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -292,29 +280,14 @@
   <data name="eyebrows_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyebrows_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hair_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hair_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="beard_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\beard_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="nose_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nose_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eyes_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="glasses_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\glasses_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="nose_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nose_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="headdress_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\headdress_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="nose" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="nose_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nose_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face_shape_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\face_shape_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -322,14 +295,11 @@
   <data name="hair_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hair_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="piercing_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\piercing_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="forehead_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forehead_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mustache_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mustache_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="headdress_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\headdress_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hair_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hair_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -352,6 +322,9 @@
   <data name="eyes_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyes_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="forehead_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forehead_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="headdress_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\headdress_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -361,17 +334,17 @@
   <data name="eyes_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyes_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eyes_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyes_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="forehead_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forehead_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forehead_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forehead_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tattoo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tattoo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eyes_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyes_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mustache_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mustache_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mustache_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mustache_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -382,17 +355,17 @@
   <data name="mustache_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mustache_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eyebrows_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyebrows_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lips_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lips_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eyebrows_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyebrows_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="beard_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\beard_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hair_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eyebrows_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyebrows_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="beard_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beard_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tattoo_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tattoo_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -418,29 +391,20 @@
   <data name="glasses_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\glasses_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="nose_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nose_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="face_shape_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\face_shape_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hair_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hair_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eyes_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="forehead_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\forehead_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lips_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lips_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="beard_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\beard_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="nose_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nose_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="hair" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="nose_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nose_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hair_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hair_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -454,11 +418,11 @@
   <data name="hair_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hair_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="face_shape_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\face_shape_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lips_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lips_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eyebrows_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyebrows_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="headdress_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\headdress_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lips_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lips_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -472,23 +436,23 @@
   <data name="glasses" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\glasses.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="face_shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\face_shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eyes_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="forehead_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\forehead_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mustache_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mustache_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="nose_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nose_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eyes_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyes_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eyebrows_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyebrows_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="forehead_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forehead_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="forehead_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\forehead_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="beard_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beard_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="nose_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nose_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eyebrows_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lips_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lips_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -496,32 +460,35 @@
   <data name="mustache_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mustache_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eyes_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyes_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eyebrows_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eyebrows_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyebrows_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eyebrows_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="piercing_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\piercing_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hair_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eyes_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyes_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eyebrows_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyebrows_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="mustache_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mustache_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lips" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lips.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hair_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="beard_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\beard_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eyebrows_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyebrows_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tattoo_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tattoo_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="forehead_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forehead_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="beard_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\beard_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hair_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hair_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tattoo_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tattoo_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -534,5 +501,38 @@
   </data>
   <data name="hair_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hair_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forehead_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forehead_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nose_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nose_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nose_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nose_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nose_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nose_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nose_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nose_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nose_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nose_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nose_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nose_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nose_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nose_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nose_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nose_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nose_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nose_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nose_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nose_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

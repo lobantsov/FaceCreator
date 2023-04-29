@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.optionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.clearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,6 +37,8 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.BTMoveUpL = new System.Windows.Forms.Button();
             this.BTMoveDownL = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.BtTattoo = new System.Windows.Forms.Button();
             this.BtPiercing = new System.Windows.Forms.Button();
             this.BtNose = new System.Windows.Forms.Button();
@@ -50,15 +52,18 @@
             this.BtEyes = new System.Windows.Forms.Button();
             this.BtEyebrows = new System.Windows.Forms.Button();
             this.BtBeard = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // optionToolStripMenuItem
+            // openToolStripMenuItem
             // 
-            this.optionToolStripMenuItem.Name = "optionToolStripMenuItem";
-            this.optionToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
-            this.optionToolStripMenuItem.Tag = "-1";
-            this.optionToolStripMenuItem.Text = "Open";
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
+            this.openToolStripMenuItem.Tag = "-1";
+            this.openToolStripMenuItem.Text = "Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.optionToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
@@ -66,13 +71,14 @@
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(54, 24);
             this.saveToolStripMenuItem.Tag = "-1";
             this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.saveToolStripMenuItem,
-            this.optionToolStripMenuItem,
+            this.openToolStripMenuItem,
             this.clearToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -91,7 +97,7 @@
             // 
             // BTSizePlus
             // 
-            this.BTSizePlus.Location = new System.Drawing.Point(12, 31);
+            this.BTSizePlus.Location = new System.Drawing.Point(3, 3);
             this.BTSizePlus.Name = "BTSizePlus";
             this.BTSizePlus.Size = new System.Drawing.Size(50, 23);
             this.BTSizePlus.TabIndex = 35;
@@ -102,7 +108,7 @@
             // 
             // BTSizeMinus
             // 
-            this.BTSizeMinus.Location = new System.Drawing.Point(12, 60);
+            this.BTSizeMinus.Location = new System.Drawing.Point(3, 32);
             this.BTSizeMinus.Name = "BTSizeMinus";
             this.BTSizeMinus.Size = new System.Drawing.Size(50, 23);
             this.BTSizeMinus.TabIndex = 36;
@@ -118,7 +124,7 @@
             this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(1129, 28);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(199, 739);
+            this.listBox1.Size = new System.Drawing.Size(199, 807);
             this.listBox1.TabIndex = 37;
             this.listBox1.Tag = "-1";
             this.listBox1.Click += new System.EventHandler(this.listBox1_Click);
@@ -130,7 +136,7 @@
             this.BTMoveUpL.Dock = System.Windows.Forms.DockStyle.Right;
             this.BTMoveUpL.Location = new System.Drawing.Point(1102, 28);
             this.BTMoveUpL.Name = "BTMoveUpL";
-            this.BTMoveUpL.Size = new System.Drawing.Size(27, 739);
+            this.BTMoveUpL.Size = new System.Drawing.Size(27, 807);
             this.BTMoveUpL.TabIndex = 38;
             this.BTMoveUpL.Tag = "-1";
             this.BTMoveUpL.Text = "^";
@@ -142,17 +148,21 @@
             this.BTMoveDownL.Dock = System.Windows.Forms.DockStyle.Right;
             this.BTMoveDownL.Location = new System.Drawing.Point(1075, 28);
             this.BTMoveDownL.Name = "BTMoveDownL";
-            this.BTMoveDownL.Size = new System.Drawing.Size(27, 739);
+            this.BTMoveDownL.Size = new System.Drawing.Size(27, 807);
             this.BTMoveDownL.TabIndex = 39;
             this.BTMoveDownL.Tag = "-1";
             this.BTMoveDownL.Text = "v";
             this.BTMoveDownL.UseVisualStyleBackColor = true;
             this.BTMoveDownL.Click += new System.EventHandler(this.BTMoveDownL_Click);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // BtTattoo
             // 
             this.BtTattoo.Image = global::FaceCreator.Properties.Resources.tattoo;
-            this.BtTattoo.Location = new System.Drawing.Point(12, 768);
+            this.BtTattoo.Location = new System.Drawing.Point(3, 740);
             this.BtTattoo.Name = "BtTattoo";
             this.BtTattoo.Size = new System.Drawing.Size(50, 50);
             this.BtTattoo.TabIndex = 33;
@@ -163,7 +173,7 @@
             // BtPiercing
             // 
             this.BtPiercing.Image = global::FaceCreator.Properties.Resources.piercing;
-            this.BtPiercing.Location = new System.Drawing.Point(12, 712);
+            this.BtPiercing.Location = new System.Drawing.Point(3, 684);
             this.BtPiercing.Name = "BtPiercing";
             this.BtPiercing.Size = new System.Drawing.Size(50, 50);
             this.BtPiercing.TabIndex = 32;
@@ -174,7 +184,7 @@
             // BtNose
             // 
             this.BtNose.Image = global::FaceCreator.Properties.Resources.nose;
-            this.BtNose.Location = new System.Drawing.Point(12, 656);
+            this.BtNose.Location = new System.Drawing.Point(3, 628);
             this.BtNose.Name = "BtNose";
             this.BtNose.Size = new System.Drawing.Size(50, 50);
             this.BtNose.TabIndex = 31;
@@ -185,7 +195,7 @@
             // BtMustache
             // 
             this.BtMustache.Image = global::FaceCreator.Properties.Resources.mustache;
-            this.BtMustache.Location = new System.Drawing.Point(12, 600);
+            this.BtMustache.Location = new System.Drawing.Point(3, 572);
             this.BtMustache.Name = "BtMustache";
             this.BtMustache.Size = new System.Drawing.Size(50, 50);
             this.BtMustache.TabIndex = 30;
@@ -196,7 +206,7 @@
             // BtLips
             // 
             this.BtLips.Image = global::FaceCreator.Properties.Resources.lips;
-            this.BtLips.Location = new System.Drawing.Point(12, 544);
+            this.BtLips.Location = new System.Drawing.Point(3, 516);
             this.BtLips.Name = "BtLips";
             this.BtLips.Size = new System.Drawing.Size(50, 50);
             this.BtLips.TabIndex = 29;
@@ -207,7 +217,7 @@
             // BtHeaddress
             // 
             this.BtHeaddress.Image = global::FaceCreator.Properties.Resources.headdress;
-            this.BtHeaddress.Location = new System.Drawing.Point(12, 488);
+            this.BtHeaddress.Location = new System.Drawing.Point(3, 460);
             this.BtHeaddress.Name = "BtHeaddress";
             this.BtHeaddress.Size = new System.Drawing.Size(50, 50);
             this.BtHeaddress.TabIndex = 28;
@@ -218,7 +228,7 @@
             // BtHair
             // 
             this.BtHair.Image = global::FaceCreator.Properties.Resources.hair;
-            this.BtHair.Location = new System.Drawing.Point(12, 432);
+            this.BtHair.Location = new System.Drawing.Point(3, 404);
             this.BtHair.Name = "BtHair";
             this.BtHair.Size = new System.Drawing.Size(50, 50);
             this.BtHair.TabIndex = 27;
@@ -229,7 +239,7 @@
             // BtGlasses
             // 
             this.BtGlasses.Image = global::FaceCreator.Properties.Resources.glasses;
-            this.BtGlasses.Location = new System.Drawing.Point(12, 376);
+            this.BtGlasses.Location = new System.Drawing.Point(3, 348);
             this.BtGlasses.Name = "BtGlasses";
             this.BtGlasses.Size = new System.Drawing.Size(50, 50);
             this.BtGlasses.TabIndex = 26;
@@ -240,7 +250,7 @@
             // BtForehead
             // 
             this.BtForehead.Image = global::FaceCreator.Properties.Resources.forehead;
-            this.BtForehead.Location = new System.Drawing.Point(12, 320);
+            this.BtForehead.Location = new System.Drawing.Point(3, 292);
             this.BtForehead.Name = "BtForehead";
             this.BtForehead.Size = new System.Drawing.Size(50, 50);
             this.BtForehead.TabIndex = 25;
@@ -251,7 +261,7 @@
             // BtFace_shape
             // 
             this.BtFace_shape.Image = global::FaceCreator.Properties.Resources.face_shape;
-            this.BtFace_shape.Location = new System.Drawing.Point(12, 264);
+            this.BtFace_shape.Location = new System.Drawing.Point(3, 236);
             this.BtFace_shape.Name = "BtFace_shape";
             this.BtFace_shape.Size = new System.Drawing.Size(50, 50);
             this.BtFace_shape.TabIndex = 24;
@@ -262,7 +272,7 @@
             // BtEyes
             // 
             this.BtEyes.Image = global::FaceCreator.Properties.Resources.eyes;
-            this.BtEyes.Location = new System.Drawing.Point(12, 208);
+            this.BtEyes.Location = new System.Drawing.Point(3, 180);
             this.BtEyes.Name = "BtEyes";
             this.BtEyes.Size = new System.Drawing.Size(50, 50);
             this.BtEyes.TabIndex = 23;
@@ -273,7 +283,7 @@
             // BtEyebrows
             // 
             this.BtEyebrows.Image = global::FaceCreator.Properties.Resources.eyebrows;
-            this.BtEyebrows.Location = new System.Drawing.Point(12, 152);
+            this.BtEyebrows.Location = new System.Drawing.Point(3, 124);
             this.BtEyebrows.Name = "BtEyebrows";
             this.BtEyebrows.Size = new System.Drawing.Size(50, 50);
             this.BtEyebrows.TabIndex = 22;
@@ -284,7 +294,7 @@
             // BtBeard
             // 
             this.BtBeard.Image = global::FaceCreator.Properties.Resources.beard;
-            this.BtBeard.Location = new System.Drawing.Point(12, 96);
+            this.BtBeard.Location = new System.Drawing.Point(3, 68);
             this.BtBeard.Name = "BtBeard";
             this.BtBeard.Size = new System.Drawing.Size(50, 50);
             this.BtBeard.TabIndex = 21;
@@ -292,30 +302,40 @@
             this.BtBeard.UseVisualStyleBackColor = true;
             this.BtBeard.Click += new System.EventHandler(this.BtBeard_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.BTSizePlus);
+            this.panel1.Controls.Add(this.BtPiercing);
+            this.panel1.Controls.Add(this.BtHair);
+            this.panel1.Controls.Add(this.BtBeard);
+            this.panel1.Controls.Add(this.BtNose);
+            this.panel1.Controls.Add(this.BtEyebrows);
+            this.panel1.Controls.Add(this.BtGlasses);
+            this.panel1.Controls.Add(this.BtHeaddress);
+            this.panel1.Controls.Add(this.BtEyes);
+            this.panel1.Controls.Add(this.BtTattoo);
+            this.panel1.Controls.Add(this.BtMustache);
+            this.panel1.Controls.Add(this.BTSizeMinus);
+            this.panel1.Controls.Add(this.BtForehead);
+            this.panel1.Controls.Add(this.BtLips);
+            this.panel1.Controls.Add(this.BtFace_shape);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 28);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(366, 807);
+            this.panel1.TabIndex = 40;
+            this.panel1.Tag = "-1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1328, 767);
+            this.ClientSize = new System.Drawing.Size(1328, 835);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.BTMoveDownL);
             this.Controls.Add(this.BTMoveUpL);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.BTSizeMinus);
-            this.Controls.Add(this.BTSizePlus);
-            this.Controls.Add(this.BtTattoo);
-            this.Controls.Add(this.BtPiercing);
-            this.Controls.Add(this.BtNose);
-            this.Controls.Add(this.BtMustache);
-            this.Controls.Add(this.BtLips);
-            this.Controls.Add(this.BtHeaddress);
-            this.Controls.Add(this.BtHair);
-            this.Controls.Add(this.BtGlasses);
-            this.Controls.Add(this.BtForehead);
-            this.Controls.Add(this.BtFace_shape);
-            this.Controls.Add(this.BtEyes);
-            this.Controls.Add(this.BtEyebrows);
-            this.Controls.Add(this.BtBeard);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
             this.Name = "Form1";
@@ -325,8 +345,10 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -343,7 +365,7 @@
         private System.Windows.Forms.Button BtGlasses;
         private System.Windows.Forms.Button BtForehead;
         private System.Windows.Forms.Button BtFace_shape;
-        private System.Windows.Forms.ToolStripMenuItem optionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.Button BtEyes;
         private System.Windows.Forms.Button BtEyebrows;
@@ -355,6 +377,9 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button BTMoveUpL;
         private System.Windows.Forms.Button BTMoveDownL;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

@@ -463,6 +463,24 @@
     <None Include="Resources\mustache_10.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\piercing_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piercing_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piercing_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tattoo_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tattoo_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tattoo_3.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\nose_1.png" />
   </ItemGroup>
   <ItemGroup>
@@ -492,23 +510,6 @@
   <ItemGroup>
     <None Include="Resources\nose_10.png" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\piercing_1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\piercing_2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\piercing_3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\tattoo_1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\tattoo_2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\tattoo_3.png" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

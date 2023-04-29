@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -16,8 +14,7 @@ namespace FaceCreator.Classes
         protected FlyWeightImage images=new FlyWeightImage(15);
         protected Button[] buttontForMenu;
         private int index;
-        public static Form currentForm { get; set; }
-        
+        public static Panel currentForm { get; set; }
         public PartFace()
         {
            
@@ -51,13 +48,6 @@ namespace FaceCreator.Classes
             }
             show(); 
         }
-
-        //public void move(int X, int Y)
-        //{
-        //    hide();
-        //    x = X; y = Y;
-        //    show();
-        //}
         public void ButtonsSummon(int _countOfButtons)
         {
             buttontForMenu=new Button[_countOfButtons];
@@ -114,7 +104,9 @@ namespace FaceCreator.Classes
             }
             else
             {
+                owner.hide_all();
                 owner.replace(owner.partFace,index);
+                owner.show_all();
             }
             owner.show_all();
   

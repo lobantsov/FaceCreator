@@ -83,19 +83,19 @@ namespace FaceCreator.Classes
             w = images.getImage(current_index).Width;
             switch (buttontForMenu[0].Name)
             {
-                case "beard": index = 1;break;
-                case "eyebrows":index=2;break;
-                case "eyes":index=3;break;
-                case "face_shape":index=4;break;
-                case "forehead": index = 5;break;
-                case "glasses": index = 6; break;
-                case "hair": index = 7;break;
-                case "headdress": index = 8;break;
-                case "lips":index=9;break;
-                case "mustache": index = 10;break;
-                case "nose":index=11;break;
-                case "piercing": index = 12;break;
-                case "tattoo":index=13;break;
+                case "beard": index = 13; break;
+                case "eyebrows": index = 6; break;
+                case "eyes": index = 3; break;
+                case "face": index =4; break;
+                case "forehead": index = 5; break;
+                case "glasses": index = 12; break;
+                case "hair": index = 7; break;
+                case "headdress": index = 8; break;
+                case "lips": index = 1; break;
+                case "mustache": index =9; break;
+                case "nose": index = 2; break;
+                case "piercing": index = 10; break;
+                case "tattoo": index = 11; break;
             }
 
             if (owner.is_in_part(index)==-1)
@@ -108,12 +108,19 @@ namespace FaceCreator.Classes
                 owner.replace(owner.partFace,index);
                 owner.show_all();
             }
+
+            sortList();
             owner.show_all();
   
         }
         public string Name()
         {
             return buttontForMenu[0].Name;
+        }
+
+        void sortList()
+        {
+            owner.listPartFaces.Sort((index, index1) => index.index.CompareTo(index1.index));
         }
 
         public int Index()

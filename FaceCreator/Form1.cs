@@ -12,7 +12,6 @@ namespace FaceCreator
     public partial class Form1 : Form
     {
         PartFace current = null;
-        bool currentMode = false;
         Face face = new Face();
         private Point point = new Point();
 
@@ -269,89 +268,36 @@ namespace FaceCreator
                 face.show_all();
             }
         }
-
-        private void MoveListItem(int index, int direction)
-        {
-            if (index < 0 || index >= face.listPartFaces.Count || face.listPartFaces.Count <= 1)
-                return;
-
-            int newIndex = index + direction;
-            if (newIndex < 0 || newIndex >= face.listPartFaces.Count)
-                return;
-
-            PartFace temp = face.listPartFaces[index];
-            face.listPartFaces.RemoveAt(index);
-            face.listPartFaces.Insert(newIndex, temp);
-        }
-
-        private void BTMoveDownL_Click(object sender, EventArgs e)
-        {
-            currentMode = true;
-            MoveListItem(listBox1.SelectedIndex, 1);
-            if (listBox1.SelectedIndex + 1 < listBox1.Items.Count)
-            {
-                var selectedItem = listBox1.SelectedItem;
-                var selectedIndex = listBox1.SelectedIndex;
-                listBox1.Items.RemoveAt(selectedIndex);
-                listBox1.Items.Insert(selectedIndex + 1, selectedItem);
-                listBox1.SetSelected(selectedIndex + 1, true);
-            }
-
-            face.show_all();
-        }
-
-        private void BTMoveUpL_Click(object sender, EventArgs e)
-        {
-            currentMode = true;
-            MoveListItem(listBox1.SelectedIndex, -1);
-            if (listBox1.SelectedIndex > 0)
-            {
-                var selectedItem = listBox1.SelectedItem;
-                var selectedIndex = listBox1.SelectedIndex;
-                listBox1.Items.RemoveAt(selectedIndex);
-                listBox1.Items.Insert(selectedIndex - 1, selectedItem);
-                listBox1.SetSelected(selectedIndex - 1, true);
-            }
-
-            face.show_all();
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (current != null && currentMode)
-                for (int i = face.listPartFaces.Count - 1; i > current.current_index; i--)
-                {
-                    current.hide();
-                    PartFace temp = current;
-                    face.listPartFaces[i] = face.listPartFaces[i - 1];
-                    face.listPartFaces[face.listPartFaces.Count - 1] = temp;
-                    face.show_all();
-                }
-        }
-
         private void listBox1_Click(object sender, EventArgs e)
         {
-            currentMode = false;
-            if (listBox1.SelectedIndex >= 0 && listBox1.SelectedIndex <= face.listPartFaces.Count)
-                current = face.listPartFaces[listBox1.SelectedIndex];
+            for (int i = 0; i < face.listPartFaces.Count; i++)
+            {
+                if (face.listPartFaces[i].Name() == listBox1.SelectedItem)
+                {
+                    current= face.listPartFaces[i];
+                }
+            }
         }
 
         private void listBox1_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right && listBox1.SelectedIndex != null)
             {
-                face.hide_all();
-                if (listBox1.SelectedItem == current.Name())
+                if (current != null)
                 {
-                    listBox1.Items.RemoveAt(listBox1.SelectedIndex);
-                    face.listPartFaces.Remove(current);
-                    if (face.listPartFaces.Count > 0)
-                        current = face.listPartFaces[0];
-                    else
-                        current = null;
-                }
+                    face.hide_all();
+                    if (listBox1.SelectedItem == current.Name() && listBox1.SelectedItem != null)
+                    {
+                        listBox1.Items.RemoveAt(listBox1.SelectedIndex);
+                        face.listPartFaces.Remove(current);
+                        if (face.listPartFaces.Count > 0)
+                            current = face.listPartFaces[0];
+                        else
+                            current = null;
+                    }
 
-                face.show_all();
+                    face.show_all();
+                }
             }
         }
 

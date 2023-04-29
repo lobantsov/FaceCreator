@@ -35,8 +35,6 @@
             this.BTSizePlus = new System.Windows.Forms.Button();
             this.BTSizeMinus = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.BTMoveUpL = new System.Windows.Forms.Button();
-            this.BTMoveDownL = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.BtTattoo = new System.Windows.Forms.Button();
@@ -128,32 +126,7 @@
             this.listBox1.TabIndex = 37;
             this.listBox1.Tag = "-1";
             this.listBox1.Click += new System.EventHandler(this.listBox1_Click);
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             this.listBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseDown);
-            // 
-            // BTMoveUpL
-            // 
-            this.BTMoveUpL.Dock = System.Windows.Forms.DockStyle.Right;
-            this.BTMoveUpL.Location = new System.Drawing.Point(1102, 28);
-            this.BTMoveUpL.Name = "BTMoveUpL";
-            this.BTMoveUpL.Size = new System.Drawing.Size(27, 807);
-            this.BTMoveUpL.TabIndex = 38;
-            this.BTMoveUpL.Tag = "-1";
-            this.BTMoveUpL.Text = "^";
-            this.BTMoveUpL.UseVisualStyleBackColor = true;
-            this.BTMoveUpL.Click += new System.EventHandler(this.BTMoveUpL_Click);
-            // 
-            // BTMoveDownL
-            // 
-            this.BTMoveDownL.Dock = System.Windows.Forms.DockStyle.Right;
-            this.BTMoveDownL.Location = new System.Drawing.Point(1075, 28);
-            this.BTMoveDownL.Name = "BTMoveDownL";
-            this.BTMoveDownL.Size = new System.Drawing.Size(27, 807);
-            this.BTMoveDownL.TabIndex = 39;
-            this.BTMoveDownL.Tag = "-1";
-            this.BTMoveDownL.Text = "v";
-            this.BTMoveDownL.UseVisualStyleBackColor = true;
-            this.BTMoveDownL.Click += new System.EventHandler(this.BTMoveDownL_Click);
             // 
             // openFileDialog1
             // 
@@ -333,8 +306,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1328, 835);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.BTMoveDownL);
-            this.Controls.Add(this.BTMoveUpL);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
@@ -375,8 +346,6 @@
         private System.Windows.Forms.Button BTSizePlus;
         private System.Windows.Forms.Button BTSizeMinus;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button BTMoveUpL;
-        private System.Windows.Forms.Button BTMoveDownL;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Panel panel1;

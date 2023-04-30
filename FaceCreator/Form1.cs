@@ -30,7 +30,6 @@ namespace FaceCreator
             PartFace.owner = face;
             PartFace.currentForm = panel1;
             Face.list = listBox1;
-            //new SolidBrush(Color.Transparent);
         }
 
         void ValidateMarker()
@@ -76,7 +75,7 @@ namespace FaceCreator
         {
             ValidateMarker();
             int x = ((Button)sender).Left + 500;
-            int y = ((Button)sender).Top+100;
+            int y = ((Button)sender).Top + 100;
             PartFace partFace = new PartFace(x, y);
 
             partFace.ClearComponents();
@@ -89,7 +88,7 @@ namespace FaceCreator
         {
             ValidateMarker();
             int x = ((Button)sender).Left + 520;
-            int y = ((Button)sender).Top+185;
+            int y = ((Button)sender).Top + 185;
             PartFace partFace = new PartFace(x, y);
 
             partFace.ClearComponents();
@@ -115,7 +114,7 @@ namespace FaceCreator
         {
             ValidateMarker();
             int x = ((Button)sender).Left + 460;
-            int y = ((Button)sender).Top-200;
+            int y = ((Button)sender).Top - 200;
             PartFace partFace = new PartFace(x, y);
 
             partFace.ClearComponents();
@@ -140,8 +139,8 @@ namespace FaceCreator
         private void BtHair_Click(object sender, EventArgs e)
         {
             ValidateMarker();
-            int x = ((Button)sender).Left+450;
-            int y = ((Button)sender).Top-300;
+            int x = ((Button)sender).Left + 450;
+            int y = ((Button)sender).Top - 300;
             PartFace partFace = new PartFace(x, y);
 
             partFace.ClearComponents();
@@ -154,7 +153,7 @@ namespace FaceCreator
         {
             ValidateMarker();
             int x = ((Button)sender).Left + 430;
-            int y = ((Button)sender).Top-310;
+            int y = ((Button)sender).Top - 310;
             PartFace partFace = new PartFace(x, y);
 
             partFace.ClearComponents();
@@ -167,7 +166,7 @@ namespace FaceCreator
         {
             ValidateMarker();
             int x = ((Button)sender).Left + 550;
-            int y = ((Button)sender).Top+30;
+            int y = ((Button)sender).Top + 30;
             PartFace partFace = new PartFace(x, y);
 
             partFace.ClearComponents();
@@ -192,7 +191,7 @@ namespace FaceCreator
         private void BtNose_Click(object sender, EventArgs e)
         {
             ValidateMarker();
-            int x = ((Button)sender).Left+530;
+            int x = ((Button)sender).Left + 530;
             int y = ((Button)sender).Top - 160;
             PartFace partFace = new PartFace(x, y);
 
@@ -206,7 +205,7 @@ namespace FaceCreator
         {
             ValidateMarker();
             int x = ((Button)sender).Left + 450;
-            int y = ((Button)sender).Top-110;
+            int y = ((Button)sender).Top - 110;
             PartFace partFace = new PartFace(x, y);
 
             partFace.ClearComponents();
@@ -219,7 +218,7 @@ namespace FaceCreator
         {
             ValidateMarker();
             int x = ((Button)sender).Left + 550;
-            int y = ((Button)sender).Top-200;
+            int y = ((Button)sender).Top - 200;
             PartFace partFace = new PartFace(x, y);
 
             partFace.ClearComponents();
@@ -274,7 +273,7 @@ namespace FaceCreator
             {
                 if (face.listPartFaces[i].Name() == listBox1.SelectedItem)
                 {
-                    current= face.listPartFaces[i];
+                    current = face.listPartFaces[i];
                 }
             }
         }
@@ -306,27 +305,6 @@ namespace FaceCreator
         {
             saveMode = true;
             Cursor = Cursors.Cross;
-            //if (saveFileDialog1.ShowDialog() == DialogResult.OK)
-            //{
-            //json.SaveResult(face.listPartFaces, $"{saveFileDialog1.FileName}.json");
-            //}
-
-        }
-
-        private void optionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            //{
-            //    string path = $"{openFileDialog1.FileName}.json";
-            //    if (File.Exists(path))
-            //    {
-            //        face.listPartFaces.Clear();
-            //    }
-
-            //    face.listPartFaces = json.ReadFile(openFileDialog1);
-            //    if (face.listPartFaces.Count > 0)
-            //        face.show_all();
-            //}
         }
 
         private void Form1_MouseUp(object sender, MouseEventArgs e)
@@ -375,7 +353,7 @@ namespace FaceCreator
 
         private void Form1_MouseMove(object sender, MouseEventArgs e)
         {
-            if (captureStarted)
+            if (captureStarted&& saveMode)
             {
                 ControlPaint.DrawReversibleFrame(rec, this.BackColor, FrameStyle.Dashed);
 
@@ -389,6 +367,5 @@ namespace FaceCreator
                 ControlPaint.DrawReversibleFrame(rec, this.BackColor, FrameStyle.Dashed);
             }
         }
-
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.clearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,14 +54,6 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // openToolStripMenuItem
-            // 
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
-            this.openToolStripMenuItem.Tag = "-1";
-            this.openToolStripMenuItem.Text = "Open";
-            this.openToolStripMenuItem.Click += new System.EventHandler(this.optionToolStripMenuItem_Click);
-            // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
@@ -76,7 +67,6 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.saveToolStripMenuItem,
-            this.openToolStripMenuItem,
             this.clearToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -336,7 +326,6 @@
         private System.Windows.Forms.Button BtGlasses;
         private System.Windows.Forms.Button BtForehead;
         private System.Windows.Forms.Button BtFace_shape;
-        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.Button BtEyes;
         private System.Windows.Forms.Button BtEyebrows;

@@ -4,6 +4,7 @@ using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Net;
+using System.Reflection.Emit;
 using System.Windows.Forms;
 using FaceCreator.Classes;
 
@@ -17,12 +18,12 @@ namespace FaceCreator
 
         private bool captureStarted = false;
         private bool saveMode = false;
+        bool manualMode=false;
         private Point startPoint;
 
-        private Bitmap tmp;
         private Rectangle rec;
 
-
+        System.Windows.Forms.Label[] labels = new System.Windows.Forms.Label[4];
         public Form1()
         {
             InitializeComponent();
@@ -353,18 +354,53 @@ namespace FaceCreator
 
         private void Form1_MouseMove(object sender, MouseEventArgs e)
         {
-            if (captureStarted&& saveMode)
+            if (captureStarted&&saveMode)
             {
                 ControlPaint.DrawReversibleFrame(rec, this.BackColor, FrameStyle.Dashed);
-
                 Point endPoint = PointToScreen(new Point(e.X, e.Y));
-
                 int width = endPoint.X - startPoint.X;
                 int height = endPoint.Y - startPoint.Y;
-
                 rec = new Rectangle(startPoint.X, startPoint.Y, width, height);
-
                 ControlPaint.DrawReversibleFrame(rec, this.BackColor, FrameStyle.Dashed);
+            }
+        }
+
+        private void manualToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            manualMode = true;
+            panel1.Enabled=false;
+            menuStrip1.Enabled=false;
+            listBox1.Enabled=false;
+            for (int i = 0; i < 4; i++)
+            {
+                labels[i] = new System.Windows.Forms.Label();
+                labels[i].Location = new Point(437, 62+50*2*i);
+                labels[i].Font = new Font(Font.FontFamily, 10);
+                this.Controls.Add(labels[i]);   
+            }
+
+            labels[0].Size = new Size(686, 60);
+            labels[0].Text = "Цей listbox призначений для вибору активної частини обличчя\r\nДля цього потрібно потрібно натиснути на об'єкт, який додався у listbox         -->\r\nP.S. в listbox додаються об'єкти по ступені додавання компонентів обличчя";
+            labels[1].Text = "Натиснувши на одну з цих кнопоко ви зможете додавати конпоненти обиччя\r\n<---   Для того щоб змінити вже доданий компонент просто треба натиснути на іншу кнопку ";
+            labels[1].Size = new Size(792, 40);
+            labels[2].Text = "Щоб видалити створений компонент обличчя         --->\r\nпотрібно вибрати компонент у listbox та натиснути по listbox правою кнопкою миші";
+            labels[2].Size = new Size(704, 40);
+            labels[3].Size = new Size(638, 40);
+            labels[3].Text = "Щоб пересувати обєкти потрібно обрати об'єкт для пересування у listbox\r\nКнопка W,A,S,D відбувається рух вверх, вліво, вниз, вправо відповідно --->";
+        }
+
+        private void Form1_Click(object sender, EventArgs e)
+        {
+            if (manualMode)
+            {
+                panel1.Enabled = true;
+                menuStrip1.Enabled = true;
+                listBox1.Enabled = true;
+                manualMode=false;
+                labels[0].Dispose();
+                labels[1].Dispose();
+                labels[2].Dispose();
+                labels[3].Dispose();
             }
         }
     }

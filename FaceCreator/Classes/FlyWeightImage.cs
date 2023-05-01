@@ -23,10 +23,6 @@ namespace FaceCreator.Classes
             this.index = index;
             return imageList[index];
         }
-        public int GetIndex()
-        {
-            return index;
-        }
         public void GetBitmapsFromResourceFolder(string imageName)
         {
             bool a = true;

@@ -1,6 +1,6 @@
 ﻿namespace FaceCreator
 {
-    partial class Form1
+    partial class FaceCreate
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -58,7 +58,7 @@
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(54, 24);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(54, 26);
             this.saveToolStripMenuItem.Tag = "-1";
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
@@ -72,7 +72,7 @@
             this.manualToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1328, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1328, 30);
             this.menuStrip1.TabIndex = 34;
             this.menuStrip1.Tag = "-1";
             this.menuStrip1.Text = "menuStrip1";
@@ -80,7 +80,7 @@
             // clearToolStripMenuItem
             // 
             this.clearToolStripMenuItem.Name = "clearToolStripMenuItem";
-            this.clearToolStripMenuItem.Size = new System.Drawing.Size(79, 24);
+            this.clearToolStripMenuItem.Size = new System.Drawing.Size(79, 26);
             this.clearToolStripMenuItem.Tag = "-1";
             this.clearToolStripMenuItem.Text = "Clear All";
             this.clearToolStripMenuItem.Click += new System.EventHandler(this.clearToolStripMenuItem_Click);
@@ -88,7 +88,7 @@
             // manualToolStripMenuItem
             // 
             this.manualToolStripMenuItem.Name = "manualToolStripMenuItem";
-            this.manualToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
+            this.manualToolStripMenuItem.Size = new System.Drawing.Size(72, 26);
             this.manualToolStripMenuItem.Text = "Manual";
             this.manualToolStripMenuItem.Click += new System.EventHandler(this.manualToolStripMenuItem_Click);
             // 
@@ -119,9 +119,9 @@
             this.listBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(1129, 28);
+            this.listBox1.Location = new System.Drawing.Point(1129, 30);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(199, 807);
+            this.listBox1.Size = new System.Drawing.Size(199, 805);
             this.listBox1.TabIndex = 37;
             this.listBox1.Tag = "-1";
             this.listBox1.Click += new System.EventHandler(this.listBox1_Click);
@@ -292,13 +292,13 @@
             this.panel1.Controls.Add(this.BtLips);
             this.panel1.Controls.Add(this.BtFace_shape);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 28);
+            this.panel1.Location = new System.Drawing.Point(0, 30);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(366, 807);
+            this.panel1.Size = new System.Drawing.Size(366, 805);
             this.panel1.TabIndex = 40;
             this.panel1.Tag = "-1";
             // 
-            // Form1
+            // FaceCreate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -308,15 +308,13 @@
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
-            this.Name = "Form1";
+            this.Name = "FaceCreate";
             this.Text = "FaceCreater";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Click += new System.EventHandler(this.Form1_Click);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);

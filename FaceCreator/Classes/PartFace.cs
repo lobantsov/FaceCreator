@@ -14,7 +14,6 @@ namespace FaceCreator.Classes
         protected FlyWeightImage images=new FlyWeightImage(15);
         protected Button[] buttontForMenu;
         private int index;
-        public PartFace partFace;
         public static Panel currentForm { get; set; }
         public PartFace()
         {

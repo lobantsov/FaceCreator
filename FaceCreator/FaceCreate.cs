@@ -10,21 +10,18 @@ using FaceCreator.Classes;
 
 namespace FaceCreator
 {
-    public partial class Form1 : Form
+    public partial class FaceCreate : Form
     {
         PartFace current = null;
         Face face = new Face();
         private Point point = new Point();
 
-        private bool captureStarted = false;
-        private bool saveMode = false;
         bool manualMode=false;
-        private Point startPoint;
 
         private Rectangle rec;
 
         System.Windows.Forms.Label[] labels = new System.Windows.Forms.Label[4];
-        public Form1()
+        public FaceCreate()
         {
             InitializeComponent();
             PartFace.Canvas = CreateGraphics();
@@ -304,42 +301,26 @@ namespace FaceCreator
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            saveMode = true;
-            Cursor = Cursors.Cross;
-        }
-
-        private void Form1_MouseUp(object sender, MouseEventArgs e)
-        {
-            captureStarted = false;
-            try
+            int x,y,w,h;
+            x = panel1.Width+27;
+            y = 60;
+            w = 1100;
+            h = 965;
+            Rectangle rect = new Rectangle(x, y, w, h);
+            Bitmap bmp = new Bitmap(rect.Width, rect.Height);
+            using (Graphics g = Graphics.FromImage(bmp))
             {
-                if (saveMode)
-                {
-                    Cursor = Cursors.Default;
-                    Rectangle rect = new Rectangle(Math.Min(startPoint.X, e.X), Math.Min(startPoint.Y, e.Y), Math.Abs(startPoint.X - e.X), Math.Abs(startPoint.Y - e.Y));
-                    Bitmap bmp = new Bitmap(rect.Width, rect.Height);
-                    using (Graphics g = Graphics.FromImage(bmp))
-                    {
-                        g.CopyFromScreen(rect.Location, Point.Empty, rect.Size);
-                    }
-                    saveFileDialog1.Filter = "PNG Files (*.png)|*.png";
-                    if (saveFileDialog1.ShowDialog() == DialogResult.OK)
-                    {
-                        bmp.Save(saveFileDialog1.FileName);
-                    }
-                    Cursor = Cursors.Default;
-                    rec = Rectangle.Empty;
-                    saveMode = false;
-                }
+                g.CopyFromScreen(rect.Location, Point.Empty, rect.Size);
             }
-            catch (Exception ex) { }
+            saveFileDialog1.Filter = "PNG Files (*.png)|*.png";
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                bmp.Save(saveFileDialog1.FileName);
+            }
         }
 
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
-            startPoint = PointToScreen(new Point(e.X, e.Y));
-
-            captureStarted = true;
             for (int i = 0; i < face.listPartFaces.Count; i++)
             {
                 current = face.listPartFaces[i];
@@ -349,19 +330,6 @@ namespace FaceCreator
                     Text = i.ToString();
                     break;
                 }
-            }
-        }
-
-        private void Form1_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (captureStarted&&saveMode)
-            {
-                ControlPaint.DrawReversibleFrame(rec, this.BackColor, FrameStyle.Dashed);
-                Point endPoint = PointToScreen(new Point(e.X, e.Y));
-                int width = endPoint.X - startPoint.X;
-                int height = endPoint.Y - startPoint.Y;
-                rec = new Rectangle(startPoint.X, startPoint.Y, width, height);
-                ControlPaint.DrawReversibleFrame(rec, this.BackColor, FrameStyle.Dashed);
             }
         }
 

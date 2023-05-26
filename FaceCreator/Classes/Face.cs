@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace FaceCreator.Classes
 {
@@ -18,7 +19,6 @@ namespace FaceCreator.Classes
             if (!list.Items.Contains(s) && marker)
                 list.Items.Add(s);
         }
-
         public void show_all()
         {
             foreach (PartFace face in listPartFaces)
@@ -47,6 +47,8 @@ namespace FaceCreator.Classes
         public void replace(PartFace part, int index)
         {
             listPartFaces[is_in_part(index)] = part;
+            list.Items.Remove(part.Name());
+            list.Items.Add(part.Name());
         }
     }
 }

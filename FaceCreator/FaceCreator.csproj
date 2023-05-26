@@ -61,7 +61,6 @@
     <Compile Include="FSave.Designer.cs">
       <DependentUpon>FSave.cs</DependentUpon>
     </Compile>
-    <Compile Include="PlayerAndCollision.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FaceCreate.resx">

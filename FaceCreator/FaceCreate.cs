@@ -18,8 +18,6 @@ namespace FaceCreator
 
         bool manualMode=false;
 
-        private Rectangle rec;
-
         System.Windows.Forms.Label[] labels = new System.Windows.Forms.Label[4];
         public FaceCreate()
         {
@@ -364,7 +362,7 @@ namespace FaceCreator
                 panel1.Enabled = true;
                 menuStrip1.Enabled = true;
                 listBox1.Enabled = true;
-                manualMode=false;
+                manualMode = false;
                 labels[0].Dispose();
                 labels[1].Dispose();
                 labels[2].Dispose();
